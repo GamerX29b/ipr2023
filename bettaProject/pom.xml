@@ -6,6 +6,22 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>bettaProject</artifactId>
+    <packaging>ear</packaging>
+    <groupId>org.ipr.bettaProject</groupId>
+    <version>1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>javax.ejb</groupId>
+            <artifactId>javax.ejb-api</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>
