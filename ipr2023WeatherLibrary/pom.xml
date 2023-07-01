@@ -5,9 +5,8 @@
                http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>alphaProject</artifactId>
-    <packaging>ear</packaging>
-    <groupId>org.ipr.alphaProject</groupId>
+    <artifactId>ipr2023WeatherLibrary</artifactId>
+    <groupId>com</groupId>
     <version>1.0</version>
 
     <repositories>
@@ -17,11 +16,4 @@
             <url>file:${project.basedir}/lib</url>
         </repository>
     </repositories>
-<dependencies>
-    <dependency>
-        <groupId>com</groupId>
-        <artifactId>ipr2023WeatherLibrary</artifactId>
-        <version>1.0</version>
-    </dependency>
-</dependencies>
 </project>

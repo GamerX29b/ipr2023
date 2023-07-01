@@ -7,8 +7,27 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>bettaProject</artifactId>
     <packaging>ear</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <groupId>org.ipr.bettaProject</groupId>
     <version>1.0</version>
+    <repositories>
+        <repository>
+            <id>localrep</id>
+            <name>local repository</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>javax.ejb</groupId>
@@ -20,6 +39,16 @@
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com</groupId>
+            <artifactId>ipr2023WeatherLibrary</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
