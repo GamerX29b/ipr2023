@@ -6,14 +6,14 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>alphaProject</artifactId>
-    <packaging>ear</packaging>
+    <packaging>war</packaging>
     <groupId>org.ipr.alphaProject</groupId>
     <version>1.0</version>
 
     <repositories>
         <repository>
             <id>localrep</id>
-            <name>local repository</name>
+            <name>localrep</name>
             <url>file:${project.basedir}/lib</url>
         </repository>
     </repositories>

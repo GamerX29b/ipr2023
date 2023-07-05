@@ -3,23 +3,23 @@ import java.util.Date;
 
 public class Weather implements Serializable {
 
-    Integer temperature;
-    Integer humidity;
+    Double temperature;
+    Double humidity;
     Date timestamp;
 
-    public Integer getTemperature() {
+    public Double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(Integer temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature = temperature;
     }
 
-    public Integer getHumidity() {
+    public Double getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(Integer humidity) {
+    public void setHumidity(Double humidity) {
         this.humidity = humidity;
     }
 
