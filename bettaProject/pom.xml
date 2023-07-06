@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>bettaProject</artifactId>
-    <packaging>war</packaging>
+    <packaging>ear</packaging>
     <build>
         <plugins>
             <plugin>
