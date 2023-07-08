@@ -14,8 +14,7 @@ import java.net.http.HttpResponse;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-
+import java.util.logging.Logger;
 
 @Stateless
 public class WeatherTimer {
@@ -23,10 +22,13 @@ public class WeatherTimer {
     @EJB
     private WeatherService weatherService;
 
-    @Schedule(second="0", minute="0", hour="1", month="*", year="*")
+    Logger log = Logger.getLogger(WeatherTimer.class.getName());
+
+    @Schedule(second="0", minute="1", hour="*", month="*", year="*")
     public void whyTemperature() throws IOException, ParseException, InterruptedException {
         Weather weather = getActualTemperature();
         weatherService.createNewTemperatureRecord(weather);
+        log.warning("Таймер сработал" + new Date());
     }
 
     public Weather getActualTemperature() throws IOException, InterruptedException, ParseException {

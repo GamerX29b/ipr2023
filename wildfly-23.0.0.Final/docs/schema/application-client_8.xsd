@@ -305,7 +305,7 @@
 
           The metadata-complete attribute defines whether this
           deployment descriptor and other related deployment
-          descriptors for this module (e.g., web service
+          descriptors for this module (e.g., web facade
           descriptors) are complete, or whether the class
           files available to this module and packaged with
           this application should be examined for annotations

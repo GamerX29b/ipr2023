@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema version="1.0beta" attributeFormDefault="unqualified"
            elementFormDefault="qualified"
-           targetNamespace="urn:jboss:jndi-binding-service:1.0"
+           targetNamespace="urn:jboss:jndi-binding-facade:1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:jbxb="http://www.jboss.org/xml/ns/jbxb"
         >
    <xs:annotation>
       <xs:documentation>This schema defines the content model for the
          JNDIBindingService BindingsConfig attribute content.<![CDATA[
-	    <jndi:bindings xmlns:jndi="urn:jboss:jndi-binding-service"
+	    <jndi:bindings xmlns:jndi="urn:jboss:jndi-binding-facade"
 	      version="1.0">
 	      ...
 	    </jndi:bindings>

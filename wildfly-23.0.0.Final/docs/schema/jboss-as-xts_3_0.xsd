@@ -64,10 +64,10 @@
     <xs:complexType name="xts-environment">
         <xs:annotation>
             <xs:documentation>
-            <![CDATA[
+                <![CDATA[
                 url configures XTS clients to use remote transaction coordination services.
                 if it is left unset then clients employ the local coordinator services.
-                the value should identify an OASIS WSTX 1.1 Activation Coordinator service.
+                the value should identify an OASIS WSTX 1.1 Activation Coordinator facade.
                 The local JBoss Activation Service url has the format
                     "http://<bindadd>r:<webport>/ws-c11/ActivationService"
                 where

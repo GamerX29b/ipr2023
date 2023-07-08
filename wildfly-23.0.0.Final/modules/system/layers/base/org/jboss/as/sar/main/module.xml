@@ -27,7 +27,7 @@
     </properties>
 
     <exports>
-        <exclude path="org/jboss/as/service/logging"/>
+        <exclude path="org/jboss/as/facade/logging"/>
     </exports>
 
     <resources>

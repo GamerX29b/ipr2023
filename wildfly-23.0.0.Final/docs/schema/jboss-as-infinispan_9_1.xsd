@@ -1143,7 +1143,7 @@
             <xs:element name="async-thread-pool" type="tns:thread-pool" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>
-                        Configuration for the executor service used for asynchronous work on the Transport,
+                        Configuration for the executor facade used for asynchronous work on the Transport,
                         including asynchronous marshalling and Cache async operations such as RemoteCache.putAsync().
                     </xs:documentation>
                 </xs:annotation>

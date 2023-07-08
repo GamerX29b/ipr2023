@@ -28,7 +28,7 @@
     <resources>
         <!-- currently jboss modules has not way of importing services from
         classes.jar so we duplicate them here -->
-        <resource-root path="service-loader-resources"/>
+        <resource-root path="facade-loader-resources"/>
     </resources>
     <dependencies>
         <module name="sun.scripting" export="true"/>

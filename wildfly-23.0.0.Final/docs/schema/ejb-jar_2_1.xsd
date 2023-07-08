@@ -1124,7 +1124,7 @@
 	    - an optional declaration of the bean's local
 	      EJB references
 	    - an optional declaration of the bean's web
-	      service references
+	      facade references
 	    - an optional declaration of the security role
 	      references
 	    - an optional declaration of the security identity
@@ -1350,7 +1350,7 @@
 	    - an optional declaration of the bean's EJB references
 	    - an optional declaration of the bean's local EJB
 	      references
-	    - an optional declaration of the bean's web service
+	    - an optional declaration of the bean's web facade
 	      references
 	    - an optional declaration of the security
 	      identity to be used for the execution of the bean's
@@ -1418,7 +1418,7 @@
 	component interfaces (e.g, in both an enterprise bean's
 	remote and local interfaces or in both an enterprise bean's
 	home and remote interfaces, etc.); the component and web
-	service endpoint interfaces, and so on.
+	facade endpoint interfaces, and so on.
 
 	The method-intf element must be one of the following:
 
@@ -1507,7 +1507,7 @@
 	must be defined in the security-role elements of the
 	deployment descriptor, and the methods must be methods
 	defined in the enterprise bean's home, component and/or web
-	service endpoint interfaces.
+	facade endpoint interfaces.
 
       </xsd:documentation>
     </xsd:annotation>
@@ -1549,14 +1549,14 @@
 	<![CDATA[
 
 	  The methodType is used to denote a method of an enterprise
-	  bean's home, component, and/or web service endpoint
+	  bean's home, component, and/or web facade endpoint
 	  interface, or, in the case of a message-driven bean, the
 	  bean's message listener method, or a set of such
 	  methods. The ejb-name element must be the name of one of the
 	  enterprise beans declared in the deployment descriptor; the
 	  optional method-intf element allows to distinguish between a
 	  method with the same signature that is multiply defined
-	  across the home, component, and/or web service endpoint
+	  across the home, component, and/or web facade endpoint
 	  interfaces; the method-name element specifies the method
 	  name; and the optional method-params elements identify a
 	  single method among multiple methods with an overloaded
@@ -1573,7 +1573,7 @@
 
 	     This style is used to refer to all the methods of the
 	     specified enterprise bean's home, component, and/or web
-	     service endpoint interfaces.
+	     facade endpoint interfaces.
 
 	  2.
 	  <method>
@@ -1614,7 +1614,7 @@
 
 	  Style 1: The following method element refers to all the
 	  methods of the EmployeeService bean's home, component,
-	  and/or web service endpoint interfaces:
+	  and/or web facade endpoint interfaces:
 
 	  <method>
 	      <ejb-name>EmployeeService</ejb-name>
@@ -1663,7 +1663,7 @@
 	  The optional method-intf element can be used when it becomes
 	  necessary to differentiate between a method that is multiply
 	  defined across the enterprise bean's home, component, and/or
-	  web service endpoint interfaces with the same name and
+	  web facade endpoint interfaces with the same name and
 	  signature.
 
 	  For example, the method element
@@ -2034,7 +2034,7 @@
 	      remote interfaces, if any
 	    - the names of the session bean's local home and
 	      local interfaces, if any
-	    - the name of the session bean's web service endpoint
+	    - the name of the session bean's web facade endpoint
 	      interface, if any
 	    - the session bean's implementation class
 	    - the session bean's state management type
@@ -2045,7 +2045,7 @@
 	    - an optional declaration of the bean's local
 	      EJB references
 	    - an optional declaration of the bean's web
-	      service references
+	      facade references
 	    - an optional declaration of the security role
 	      references
 	    - an optional declaration of the security identity
@@ -2065,7 +2065,7 @@
 	the home and the remote elements must be specified for the
 	session bean.
 
-	The service-endpoint element may only be specified if the
+	The facade-endpoint element may only be specified if the
 	bean is a stateless session bean.
 
       </xsd:documentation>
@@ -2093,12 +2093,12 @@
 	<xsd:annotation>
 	  <xsd:documentation>
 
-	    The service-endpoint element contains the
+	    The facade-endpoint element contains the
 	    fully-qualified name of the enterprise bean's web
-	    service endpoint interface. The service-endpoint
+	    facade endpoint interface. The facade-endpoint
 	    element may only be specified for a stateless
 	    session bean. The specified interface must be a
-	    valid JAX-RPC service endpoint interface.
+	    valid JAX-RPC facade endpoint interface.
 
 	  </xsd:documentation>
 	</xsd:annotation>

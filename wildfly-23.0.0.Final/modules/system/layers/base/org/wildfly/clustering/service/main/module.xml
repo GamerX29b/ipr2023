@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-clustering-service-23.0.0.Final.jar"/>
+        <resource-root path="wildfly-clustering-facade-23.0.0.Final.jar"/>
     </resources>
 
     <dependencies>

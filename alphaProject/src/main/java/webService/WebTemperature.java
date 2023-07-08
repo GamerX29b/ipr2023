@@ -1,6 +1,9 @@
 package webService;
 
-import javax.ejb.EJB;
+import dto.Weather;
+import facade.WeatherFacade;
+
+import javax.annotation.Resource;
 import javax.ejb.Stateless;
 import javax.jws.WebService;
 
@@ -8,11 +11,11 @@ import javax.jws.WebService;
 @WebService(endpointInterface = "webService.WebTemperatureService")
 public class WebTemperature implements WebTemperatureService{
 
-    @EJB
+    @Resource(name = "jdbc/WeatherFacade")
     WeatherFacade weatherFacade;
 
     @Override
-    public Double takeTemperature(){
+    public Weather takeTemperature(){
         return weatherFacade.temperature();
     }
 }

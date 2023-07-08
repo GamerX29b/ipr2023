@@ -336,14 +336,14 @@
    <xsd:complexType name="cache-nameType">
       <xsd:annotation>
          <xsd:documentation>
-            <![CDATA[
+             <![CDATA[
 
             Clustering only: Name of the JBoss Cache or PojoCache configuration that
             should be used for storing distributable sessions and replicating them around the
             cluster.
 
             Default value if not explicitly set is the overall web container default
-            as set in the deployers/jbossweb.deployer service.
+            as set in the deployers/jbossweb.deployer facade.
 
             ]]>
          </xsd:documentation>
@@ -504,7 +504,7 @@
    <xsd:complexType name="use-jkType">
       <xsd:annotation>
          <xsd:documentation>
-            <![CDATA[
+             <![CDATA[
 
             Clustering only: Whether the container should assume mod_jk is used for
             load balancing for this webapp. If set to 'true', the container will examine
@@ -517,7 +517,7 @@
             </Engine>
 
             Default value if not explicitly set is the overall web container default
-            as set in the deployers/jbossweb.deployer service. By default that is set
+            as set in the deployers/jbossweb.deployer facade. By default that is set
             to "false".
 
             ]]>
@@ -566,7 +566,7 @@
    <xsd:complexType name="snapshot-modeType">
       <xsd:annotation>
          <xsd:documentation>
-            <![CDATA[
+             <![CDATA[
 
             Clustering only: Defines when the sessions are replicated to the other nodes.
             The typical value, "instant", replicates changes to the other nodes at the end
@@ -577,7 +577,7 @@
             them.
 
             Default value if not explicitly set is the overall web container default
-            as set in the deployers/jbossweb.deployer service. By default that is set
+            as set in the deployers/jbossweb.deployer facade. By default that is set
             to "instant".
 
             Note that this property has no effect if replication-granularity
@@ -597,14 +597,14 @@
    <xsd:simpleType name="snapshot-intervalType">
       <xsd:annotation>
          <xsd:documentation>
-            <![CDATA[
+             <![CDATA[
 
             Clustering only: Defines how often (in milliseconds) the background
             process that replicates modified sessions should be started for this
             web app.  Only meaningful if snapshot-mode is set to "interval".
 
             Default value if not explicitly set is the overall web container default
-            as set in the deployers/jbossweb.deployer service. By default that is set
+            as set in the deployers/jbossweb.deployer facade. By default that is set
             to "1000".
 
             ]]>
@@ -616,10 +616,10 @@
    <xsd:complexType name="session-notification-policyType">
       <xsd:annotation>
          <xsd:documentation>
-            <![CDATA[
+             <![CDATA[
 
             Clustering only: Fully qualified class name of the implementation of the
-            org.jboss.web.tomcat.service.session.notification.ClusteredSessionNotificationPolicy
+            org.jboss.web.tomcat.facade.session.notification.ClusteredSessionNotificationPolicy
             interface that should be used to govern whether servlet specification
             notifications should be emitted to any registered HttpSessionListener,
             HttpSessionAttributeListener and/or HttpSessionBindingListener.
@@ -629,7 +629,7 @@
             author fine-grained control over what notifications are issued.
 
             Default value if not explicitly set is the
-            org.jboss.web.tomcat.service.session.notification.IgnoreUndeployLegacyClusteredSessionNotificationPolicy.
+            org.jboss.web.tomcat.facade.session.notification.IgnoreUndeployLegacyClusteredSessionNotificationPolicy.
 
             ]]>
          </xsd:documentation>

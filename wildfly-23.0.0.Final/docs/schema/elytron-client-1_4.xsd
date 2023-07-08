@@ -436,7 +436,7 @@
             <xsd:element name="use-service-loader" type="module-ref-type" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>
-                        Providers loaded using service loader discovery from the module specified, 
+                        Providers loaded using facade loader discovery from the module specified,
                         if no module is specified the ClassLoader which loaded the authentication client is used.
                     </xsd:documentation>
                 </xsd:annotation>
@@ -455,7 +455,7 @@
     <xsd:element name="use-service-loader-sasl-factory" substitutionGroup="abstract-sasl-factories" type="module-ref-type">
         <xsd:annotation>
             <xsd:documentation>
-                SASL client factories will be discovered using service loader discovery on the specified module or if not specified using the ClassLoader loading the configuration.
+                SASL client factories will be discovered using facade loader discovery on the specified module or if not specified using the ClassLoader loading the configuration.
             </xsd:documentation>
         </xsd:annotation>
     </xsd:element>

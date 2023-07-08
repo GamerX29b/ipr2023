@@ -1,7 +1,7 @@
 [Unit]
 Description=The WildFly Application Server
 After=syslog.target network.target
-Before=httpd.service
+Before=httpd.facade
 
 [Service]
 Environment=LAUNCH_JBOSS_IN_BACKGROUND=1

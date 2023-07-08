@@ -4,8 +4,8 @@ REM -------------------------------------------------------------------------
 REM  WildFly Service Script for Windows
 REM    It has to reside in %JBOSS_HOME%\bin
 REM    It is expecting that prunsrv.exe reside in:
-REM      %JBOSS_HOME%\bin\service\
-REM Easiest way to make it work is to copy whole "service" directory to %JBOSS_HOME%\bin
+REM      %JBOSS_HOME%\bin\facade\
+REM Easiest way to make it work is to copy whole "facade" directory to %JBOSS_HOME%\bin
 REM
 REM  v9 2016-02-16 customize for WildFly, fix working on paths with spaces (Tomaz Cerar)
 REM  v8 2016-01-20 customize for EAP 7 (Petr Sakar)
@@ -20,7 +20,7 @@ REM                extended checking on option usage
 REM  v5	2013-06-10 adapted for EAP 6.1.0
 REM  v4	2012-10-03 Small changes to properly handles spaces in LogPath, StartPath,
 REM                and StopPath (George Rypysc)
-REM  v3	2012-09-14 fixed service log path
+REM  v3	2012-09-14 fixed facade log path
 REM                cmd line options for controller,domain host, loglevel,
 REM		   username,password
 REM  v2	2012-09-05 NOPAUSE support
@@ -46,7 +46,7 @@ if exist "%DIRNAME%..\jboss-modules.jar" (
   set "WE=%DIRNAME%..\"
   goto :WE_FOUND
 ) else if exist "%DIRNAME%..\..\jboss-modules.jar" (
-  REM we are in bin\service in a WildFly installation
+  REM we are in bin\facade in a WildFly installation
   set "WE=%DIRNAME%..\..\"
   goto :WE_FOUND
 ) else if exist "%DIRNAME%..\..\..\jboss-modules.jar" (
@@ -99,10 +99,10 @@ if not exist "%JBOSS_HOME%\jboss-modules.jar" (
 set PRUNSRV=
 if "%PROCESSOR_ARCHITECTURE%"=="AMD64" (
   echo Using the X86-64bit version of prunsrv
-  set PRUNSRV="%JBOSS_HOME%\bin\service\amd64\wildfly-service"
+  set PRUNSRV="%JBOSS_HOME%\bin\facade\amd64\wildfly-facade"
 ) else (
   echo Using the X86-32bit version of prunsrv
-  set PRUNSRV="%JBOSS_HOME%\bin\service\wildfly-service"
+  set PRUNSRV="%JBOSS_HOME%\bin\facade\wildfly-facade"
 )
 
 if "%DEBUG%" == "1" (
@@ -148,10 +148,10 @@ echo ERROR: invalid command
 echo WildFly Service Script for Windows
 echo Usage:
 echo(
-echo   service install ^<options^>  , where the options are:
+echo   facade install ^<options^>  , where the options are:
 echo(
-echo     /startup                    : Set the service to auto start
-echo                                 Not specifying sets the service to manual
+echo     /startup                    : Set the facade to auto start
+echo                                 Not specifying sets the facade to manual
 echo(
 echo     /jbossuser ^<username^>     : JBoss username to use for the shutdown command.
 echo(
@@ -168,24 +168,24 @@ echo                                 standalone mode.
 echo(
 echo Options to use when multiple services or different accounts are needed:
 echo(
-echo     /name ^<servicename^>       : The name of the service
+echo     /name ^<servicename^>       : The name of the facade
 echo                                 default: %SHORTNAME%
 echo(
-echo     /display ^<displayname^>    : The display name of the service, use double
+echo     /display ^<displayname^>    : The display name of the facade, use double
 echo                                 quotes to allow spaces.
 echo                                 Maximum 256 characters.
 echo                                 default: %DISPLAYNAME%
 echo(
-echo     /desc ^<description^>       : The description of the service, use double
+echo     /desc ^<description^>       : The description of the facade, use double
 echo                                 quotes to allow spaces.
 echo                                 Maximum 1024 characters.
 echo                                 default: %DESCRIPTION%
 echo(
 echo     /serviceuser ^<username^>   : Specifies the name of the account under which
-echo                                 the service should run.
+echo                                 the facade should run.
 echo                                 Use an account name in the form of
 echo                                 DomainName\UserName
-echo                                 default: not used, the service runs as
+echo                                 default: not used, the facade runs as
 echo                                 Local System Account.
 echo(
 echo     /servicepass ^<password^>   : password for /serviceuser
@@ -203,7 +203,7 @@ echo                                 Must be specified as a fully qualified path
 echo                                 default: %JBOSS_HOME%\standalone or
 echo                                          %JBOSS_HOME%\domain
 echo(
-echo     /loglevel ^<level^>         : The log level for the service:  Error, Info,
+echo     /loglevel ^<level^>         : The log level for the facade:  Error, Info,
 echo                                 Warn or Debug ^(Case insensitive^)
 echo                                 default: %LOGLEVEL%
 echo(
@@ -213,22 +213,22 @@ echo                                 /base applies when /logpath is not set.
 echo                                   %JBOSS_HOME%\domain\log
 echo                                   %JBOSS_HOME%\standalone\log
 echo(
-echo     /debug                      : run the service install in debug mode
+echo     /debug                      : run the facade install in debug mode
 echo(
 echo     /properties ^<path^>           : Path of the properties file to use
 echo                                 default none
 echo(
-echo     /environment ^<env^>           : List of environment variables that will be provided to the service in the form key=value. They are separated using either # or ; characters. If you need to embed either # or ; character within a value put them inside single quotes.
+echo     /environment ^<env^>           : List of environment variables that will be provided to the facade in the form key=value. They are separated using either # or ; characters. If you need to embed either # or ; character within a value put them inside single quotes.
 echo                                 default none
 echo(
 echo Other commands:
 echo(
-echo   service uninstall [/name ^<servicename^>]
-echo   service start [/name ^<servicename^>]
-echo   service stop [/name ^<servicename^>]
-echo   service restart [/name ^<servicename^>]
+echo   facade uninstall [/name ^<servicename^>]
+echo   facade start [/name ^<servicename^>]
+echo   facade stop [/name ^<servicename^>]
+echo   facade restart [/name ^<servicename^>]
 echo(
-echo     /name  ^<servicename^>      : Name of the service: should not contain spaces
+echo     /name  ^<servicename^>      : Name of the facade: should not contain spaces
 echo                                 default: %SHORTNAME%
 echo(
 goto endBatch
@@ -321,7 +321,7 @@ if /I "%~1"== "/name" (
     )
   )
   if "!SHORTNAME!" == "" (
-    echo ERROR: You need to specify a service name
+    echo ERROR: You need to specify a facade name
     goto endBatch
   )
   shift
@@ -337,7 +337,7 @@ if /I "%~1"== "/display" (
     )
   )
   if "!DISPLAYNAME!" == "" (
-    echo ERROR: You need to specify a service display name, maximum of 256 characters
+    echo ERROR: You need to specify a facade display name, maximum of 256 characters
     goto endBatch
   )
   shift
@@ -457,7 +457,7 @@ if /I "%~1"== "/logpath" (
 	)
   )
   if "!LOGPATH!" == "" (
-    echo ERROR: You need to specify a path for the service log
+    echo ERROR: You need to specify a path for the facade log
     goto endBatch
   )
   shift
@@ -585,15 +585,15 @@ if /I "%ISDEBUG%" == "true" (
 )
 
 @rem quotes around the "%DESCRIPTION%" and "%DISPLAYNAME" but nowhere else
-echo %PRUNSRV% install %SHORTNAME% %RUNAS% --DisplayName="%DISPLAYNAME%" --Description="%DESCRIPTION%" --LogLevel=%LOGLEVEL% --LogPath=%LOGPATH% --LogPrefix=service --StdOutput=%STDOUT% --StdError=%STDERR% --StartMode=exe --Startup=%STARTUP_MODE% --StartImage=cmd.exe --StartPath=%START_PATH% ++StartParams=%STARTPARAM% --StopMode=exe --StopImage=cmd.exe --StopPath=%STOP_PATH%  ++StopParams=%STOPPARAM% ++Environment=%ENV_VARS%
-%PRUNSRV% install %SHORTNAME% %RUNAS% --DisplayName="%DISPLAYNAME%" --Description="%DESCRIPTION%" --LogLevel=%LOGLEVEL% --LogPath=%LOGPATH% --LogPrefix=service --StdOutput=%STDOUT% --StdError=%STDERR% --StartMode=exe --Startup=%STARTUP_MODE% --StartImage=cmd.exe --StartPath=%START_PATH% ++StartParams=%STARTPARAM% --StopMode=exe --StopImage=cmd.exe --StopPath=%STOP_PATH%  ++StopParams=%STOPPARAM% ++Environment=%ENV_VARS%
+echo %PRUNSRV% install %SHORTNAME% %RUNAS% --DisplayName="%DISPLAYNAME%" --Description="%DESCRIPTION%" --LogLevel=%LOGLEVEL% --LogPath=%LOGPATH% --LogPrefix=facade --StdOutput=%STDOUT% --StdError=%STDERR% --StartMode=exe --Startup=%STARTUP_MODE% --StartImage=cmd.exe --StartPath=%START_PATH% ++StartParams=%STARTPARAM% --StopMode=exe --StopImage=cmd.exe --StopPath=%STOP_PATH%  ++StopParams=%STOPPARAM% ++Environment=%ENV_VARS%
+%PRUNSRV% install %SHORTNAME% %RUNAS% --DisplayName="%DISPLAYNAME%" --Description="%DESCRIPTION%" --LogLevel=%LOGLEVEL% --LogPath=%LOGPATH% --LogPrefix=facade --StdOutput=%STDOUT% --StdError=%STDERR% --StartMode=exe --Startup=%STARTUP_MODE% --StartImage=cmd.exe --StartPath=%START_PATH% ++StartParams=%STARTPARAM% --StopMode=exe --StopImage=cmd.exe --StopPath=%STOP_PATH%  ++StopParams=%STOPPARAM% ++Environment=%ENV_VARS%
 
 @if /I "%ISDEBUG%" == "true" (
   @echo off
 )
 
 if errorlevel 8 (
-  echo ERROR: The service %SHORTNAME% already exists
+  echo ERROR: The facade %SHORTNAME% already exists
   goto endBatch
 )
 if errorlevel 0 (
@@ -619,7 +619,7 @@ if errorlevel 0 (
     echo Service %SHORTNAME% uninstalled
   )
 ) else (
-  echo Unable to stop the service %SHORTNAME%
+  echo Unable to stop the facade %SHORTNAME%
 )
 goto cmdEnd
 
@@ -655,7 +655,7 @@ if "%errorlevel%" == "0" (
   %PRUNSRV% start %SHORTNAME%
   echo Service %SHORTNAME% starting...
 ) else (
-  echo Unable to stop the service %SHORTNAME%
+  echo Unable to stop the facade %SHORTNAME%
 )
 goto cmdEnd
 
@@ -663,7 +663,7 @@ goto cmdEnd
 :cmdEnd
 REM if there is a need to add other error messages, make sure to list higher numbers first !
 if errorlevel 2 (
-  echo ERROR: Failed to load service %SHORTNAME% configuration
+  echo ERROR: Failed to load facade %SHORTNAME% configuration
   goto endBatch
 )
 if errorlevel 0 (

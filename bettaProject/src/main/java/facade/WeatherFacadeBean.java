@@ -1,4 +1,4 @@
-package service;
+package facade;
 
 import database.dao.WeatherService;
 import dto.Weather;

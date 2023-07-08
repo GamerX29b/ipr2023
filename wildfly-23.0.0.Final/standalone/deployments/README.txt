@@ -71,32 +71,32 @@ The relevant marker file types are:
                   well, although the scanner will detect in-progress changes
                   to zipped content and wait until changes are complete.
 
-.isdeploying   -- Placed by the deployment scanner service to indicate that it
+.isdeploying   -- Placed by the deployment scanner facade to indicate that it
                   has noticed a .dodeploy file or new or updated auto-deploy
                   mode content and is in the process of deploying the content.
                   This marker file will be deleted when the deployment process
                   completes.
 
-.deployed      -- Placed by the deployment scanner service to indicate that the
+.deployed      -- Placed by the deployment scanner facade to indicate that the
                   given content has been deployed into the runtime. If an end
                   user deletes this file, the content will be undeployed.
 
-.failed        -- Placed by the deployment scanner service to indicate that the
+.failed        -- Placed by the deployment scanner facade to indicate that the
                   given content failed to deploy into the runtime. The content
                   of the file will include some information about the cause of
                   the failure. Note that with auto-deploy mode, removing this
                   file will make the deployment eligible for deployment again.
 
-.isundeploying -- Placed by the deployment scanner service to indicate that it
+.isundeploying -- Placed by the deployment scanner facade to indicate that it
                   has noticed a .deployed file has been deleted and the
                   content is being undeployed. This marker file will be deleted
                   when the undeployment process completes.
 
-.undeployed    -- Placed by the deployment scanner service to indicate that the
+.undeployed    -- Placed by the deployment scanner facade to indicate that the
                   given content has been undeployed from the runtime. If an end
                   user deletes this file, it has no impact.
 
-.pending       -- Placed by the deployment scanner service to indicate that it
+.pending       -- Placed by the deployment scanner facade to indicate that it
                   has noticed the need to deploy content but has not yet
                   instructed the server to deploy it. This file is created if
                   the scanner detects that some auto-deploy content is still in

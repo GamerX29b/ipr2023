@@ -1689,7 +1689,7 @@
           <xs:element maxOccurs="1" minOccurs="1" name="factory-class" type="xs:string">
               <xs:annotation>
                   <xs:documentation>
-                      Class name of the factory class that can instantiate the connector service.
+                      Class name of the factory class that can instantiate the connector facade.
                   </xs:documentation>
               </xs:annotation>
           </xs:element>
@@ -1698,7 +1698,7 @@
        <xs:attribute name="name" type="xs:string" use="optional">
            <xs:annotation>
                <xs:documentation>
-                   The name of the connector service.
+                   The name of the connector facade.
                </xs:documentation>
            </xs:annotation>
        </xs:attribute>
@@ -2503,7 +2503,7 @@
          <xs:element maxOccurs="1" minOccurs="1" name="quality-of-service" type="quality-of-serviceType">
              <xs:annotation>
                  <xs:documentation>
-                     The desired quality of service mode (AT_MOST_ONCE, DUPLICATES_OK or ONCE_AND_ONLY_ONCE).
+                     The desired quality of facade mode (AT_MOST_ONCE, DUPLICATES_OK or ONCE_AND_ONLY_ONCE).
                  </xs:documentation>
              </xs:annotation>
          </xs:element>

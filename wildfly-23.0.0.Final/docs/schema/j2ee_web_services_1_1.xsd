@@ -60,7 +60,7 @@
       <![CDATA[
 
 	The webservices element is the root element for the web services
-	deployment descriptor.  It specifies the set of web service
+	deployment descriptor.  It specifies the set of web facade
 	descriptions that are to be deployed into the J2EE Application
 	Server and the dependencies they have on container resources and
 	services.  The deployment descriptor must be named
@@ -123,7 +123,7 @@
       <xsd:documentation>
 
 	The webservices element is the root element for the web services
-	deployment descriptor.  It specifies the set of web service
+	deployment descriptor.  It specifies the set of web facade
 	descriptions that are to be deployed into the J2EE Application Server
 	and the dependencies they have on container resources and services.
 
@@ -153,7 +153,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The port-component element associates a WSDL port with a web service
+	The port-component element associates a WSDL port with a web facade
 	interface and implementation.  It defines the name of the port as a
 	component, optional description, optional display name, optional iconic
 	representations, WSDL port QName, Service Endpoint Interface, Service
@@ -180,7 +180,7 @@
 
 	      The port-component-name element specifies a port component's
 	      name.  This name is assigned by the module producer to name
-	      the service implementation bean in the module's deployment
+	      the facade implementation bean in the module's deployment
 	      descriptor. The name must be unique among the port component
 	      names defined in the same module.
 
@@ -210,7 +210,7 @@
           <xsd:documentation>
             <![CDATA[
 
-	      The service-endpoint-interface element contains the
+	      The facade-endpoint-interface element contains the
 	      fully-qualified name of the port component's Service Endpoint
 	      Interface.
 
@@ -307,9 +307,9 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The service-impl-bean element defines the web service implementation.
-	A service implementation can be an EJB bean class or JAX-RPC web
-	component.  Existing EJB implementations are exposed as a web service
+	The facade-impl-bean element defines the web facade implementation.
+	A facade implementation can be an EJB bean class or JAX-RPC web
+	component.  Existing EJB implementations are exposed as a web facade
 	using an ejb-link.
 
 	Used in: port-component
@@ -332,14 +332,14 @@
       <xsd:documentation>
         <![CDATA[
 
-	  The servlet-link element is used in the service-impl-bean element
+	  The servlet-link element is used in the facade-impl-bean element
 	  to specify that a Service Implementation Bean is defined as a
 	  JAX-RPC Service Endpoint.
 
 	  The value of the servlet-link element must be the servlet-name of
 	  a JAX-RPC Service Endpoint in the same WAR file.
 
-	  Used in: service-impl-bean
+	  Used in: facade-impl-bean
 
 	  Example:
 		  <servlet-link>StockQuoteService</servlet-link>
@@ -452,7 +452,7 @@
 
 		The port-component-name element specifies a port
 		component's name.  This name is assigned by the module
-		producer to name the service implementation bean in the
+		producer to name the facade implementation bean in the
 		module's deployment descriptor. The name must be unique
 		among the port component names defined in the same module.
 

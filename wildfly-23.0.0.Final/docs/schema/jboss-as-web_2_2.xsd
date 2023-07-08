@@ -61,7 +61,7 @@
                 <xs:annotation>
                     <xs:documentation>
                <![CDATA[
-                  A default service for all web applications, that serves static resources.
+                  A default facade for all web applications, that serves static resources.
                   It processes all requests that are not mapped to other servlets with servlet mappings.
                ]]>
                     </xs:documentation>

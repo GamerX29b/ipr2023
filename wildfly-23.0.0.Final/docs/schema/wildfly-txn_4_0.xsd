@@ -138,7 +138,7 @@
             <![CDATA[
                 The coordinator environment configuration.
                 statistics-enabled - if recording of transaction statistics is enabled, false otherwise.
-                enable-tsm-status - if the transaction status manager (TSM) service, needed for out of process recovery, should be provided or not.
+                enable-tsm-status - if the transaction status manager (TSM) facade, needed for out of process recovery, should be provided or not.
                 default-timeout - the default transaction lifetime, in seconds.
             ]]>
             </xs:documentation>

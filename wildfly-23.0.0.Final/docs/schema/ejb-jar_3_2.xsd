@@ -859,7 +859,7 @@
 
           The metadata-complete attribute defines whether this
           deployment descriptor and other related deployment
-          descriptors for this module (e.g., web service
+          descriptors for this module (e.g., web facade
           descriptors) are complete, or whether the class
           files available to this module and packaged with
           this application should be examined for annotations
@@ -1417,7 +1417,7 @@
         - an optional declaration of the bean's local 
         EJB references
         - an optional declaration of the bean's web 
-        service references
+        facade references
         - an optional declaration of the security role 
         references
         - an optional declaration of the security identity
@@ -2007,7 +2007,7 @@
         - an optional declaration of the bean's EJB references
         - an optional declaration of the bean's local EJB
         references
-        - an optional declaration of the bean's web service
+        - an optional declaration of the bean's web facade
         references
         - an optional declaration of the security role 
         references
@@ -2121,7 +2121,7 @@
         business interface method
         home interface method
         component interface method
-        web service endpoint interface method
+        web facade endpoint interface method
         no-interface view method
         singleton session bean lifecycle callback method
         stateful session bean lifecycle callback method (see 
@@ -2152,7 +2152,7 @@
         business interface methods
         home interface methods
         component interface methods
-        web service endpoint interface methods
+        web facade endpoint interface methods
         no-interface view methods
         singleton session bean lifecycle callback methods
         timeout callback methods
@@ -2223,7 +2223,7 @@
         component business interface methods   
         singleton session bean lifecycle callback methods, if any
         timeout callback methods
-        web service endpoint interface methods
+        web facade endpoint interface methods
         message-driven bean message listener methods (if the bean
         a message-driven bean)
         
@@ -2278,7 +2278,7 @@
         business interface methods
         home interface methods
         component interface methods
-        web service endpoint methods
+        web facade endpoint methods
         no-interface view methods
         singleton or stateful session bean lifecycle callback methods
         timeout callback methods
@@ -2380,7 +2380,7 @@
         component interfaces (e.g, in both an enterprise bean's
         remote and local interfaces or in both an enterprise bean's
         home and remote interfaces, etc.); the component and web
-        service endpoint interfaces, and so on. 
+        facade endpoint interfaces, and so on.
         
         Local applies to the local component interface, local business 
         interfaces, and the no-interface view. 
@@ -2388,7 +2388,7 @@
         Remote applies to both remote component interface and the remote 
         business interfaces.  
         
-        ServiceEndpoint refers to methods exposed through a web service
+        ServiceEndpoint refers to methods exposed through a web facade
         endpoint.
         
         Timer refers to the bean's timeout callback methods.
@@ -2497,7 +2497,7 @@
         method-permissionType must be defined in the security-role
         elements of the deployment descriptor, and the methods
         must be methods defined in the enterprise bean's no-interface
-        view, business, home, component and/or web service endpoint
+        view, business, home, component and/or web facade endpoint
         interfaces. 
         
         If the role name "**" is included in the list of allowed 
@@ -2857,7 +2857,7 @@
         local interfaces, if any
         - an optional declaration that this bean exposes a
         no-interface view
-        - the name of the session bean's web service endpoint
+        - the name of the session bean's web facade endpoint
         interface, if any
         - the session bean's implementation class
         - the session bean's state management type
@@ -2890,7 +2890,7 @@
         - an optional declaration of the bean's local 
         EJB references
         - an optional declaration of the bean's web 
-        service references
+        facade references
         - an optional declaration of the security role 
         references
         - an optional declaration of the security identity 
@@ -2909,7 +2909,7 @@
         that they are omitted when if lists represented by them are
         empty.
         
-        The service-endpoint element may only be specified if the
+        The facade-endpoint element may only be specified if the
         bean is a stateless session bean.
         
       </xsd:documentation>
@@ -2959,12 +2959,12 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            The service-endpoint element contains the
+            The facade-endpoint element contains the
             fully-qualified name of the enterprise bean's web
-            service endpoint interface. The service-endpoint
+            facade endpoint interface. The facade-endpoint
             element may only be specified for a stateless
             session bean. The specified interface must be a
-            valid JAX-RPC service endpoint interface.
+            valid JAX-RPC facade endpoint interface.
             
           </xsd:documentation>
         </xsd:annotation>

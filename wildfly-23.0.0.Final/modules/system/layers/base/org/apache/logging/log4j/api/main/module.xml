@@ -30,7 +30,7 @@
     <dependencies>
         <!--
             This is a circular dependency to avoid adding the private implementation to a dependent module. The API uses
-            static variables for the providers and factories. These are located through a custom service loader and we
+            static variables for the providers and factories. These are located through a custom facade loader and we
             should bind to this implementation only. Users wanting to not use this implementation need to also not use
             this API.
         -->

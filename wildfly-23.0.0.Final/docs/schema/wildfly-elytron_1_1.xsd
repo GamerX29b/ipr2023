@@ -446,7 +446,7 @@
                  <xs:documentation>
                      The name of the module to use to load the providers.
 
-                     If this is not specified the ClassLoader used to load the service will be used instead.
+                     If this is not specified the ClassLoader used to load the facade will be used instead.
                  </xs:documentation>
              </xs:annotation>
          </xs:attribute>
@@ -455,7 +455,7 @@
                  <xs:documentation>
                      The fully qualified class names of the providers to load.
 
-                     If this attribute is not specified then service loader based discovery will be used instead.
+                     If this attribute is not specified then facade loader based discovery will be used instead.
                  </xs:documentation>
              </xs:annotation>
          </xs:attribute>
@@ -2173,7 +2173,7 @@
                 <xs:attribute name="required" type="xs:boolean" default="false">
                     <xs:annotation>
                         <xs:documentation>
-                            Is the keytab file with adequate principal required to exist at the time the service starts?
+                            Is the keytab file with adequate principal required to exist at the time the facade starts?
                         </xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
@@ -3526,7 +3526,7 @@
                         <xs:documentation>
                             The name of the module to use.
 
-                            If this is not specified the ClassLoader used to load the service will be used instead.
+                            If this is not specified the ClassLoader used to load the facade will be used instead.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
@@ -3855,7 +3855,7 @@
                         <xs:documentation>
                             The name of the module to use.
 
-                            If this is not specified the ClassLoader used to load the service will be used instead.
+                            If this is not specified the ClassLoader used to load the facade will be used instead.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:attribute>

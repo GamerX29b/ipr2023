@@ -167,14 +167,14 @@
       <xsd:documentation>
 
 	The exception-mapping element defines the mapping between the
-	service specific exception types and wsdl faults and
+	facade specific exception types and wsdl faults and
 	SOAP headerfaults.
 
 	This element should be interpreted with respect to the
 	mapping between a method and an operation which provides the
 	mapping context.
 
-	Used in: service-endpoint-method-mapping
+	Used in: facade-endpoint-method-mapping
 
       </xsd:documentation>
     </xsd:annotation>
@@ -185,7 +185,7 @@
 	  <xsd:documentation>
 
 	    The exception-type element defines Java type of the exception.
-	    It may be a service specific exception.
+	    It may be a facade specific exception.
 
 	    It must be a fully qualified class name.
 
@@ -335,7 +335,7 @@
 	The method-param-parts-mapping element defines the mapping between a
 	Java method parameters and a wsdl-message.
 
-	Used in: service-endpoint-method-mapping
+	Used in: facade-endpoint-method-mapping
 
       </xsd:documentation>
     </xsd:annotation>
@@ -441,7 +441,7 @@
 	to the Java name used to generate the Generated Service Interface
 	method get{java-name}.
 
-	Used in: service-interface-mapping
+	Used in: facade-interface-mapping
 
       </xsd:documentation>
     </xsd:annotation>
@@ -503,7 +503,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The service-endpoint-interface-mapping defines a tuple
+	The facade-endpoint-interface-mapping defines a tuple
 	to specify Service Endpoint Interfaces to
 	WSDL port types and WSDL bindings.
 
@@ -520,7 +520,7 @@
 	<xsd:annotation>
 	  <xsd:documentation>
 
-	    The service-endpoint-interface element defines the Java
+	    The facade-endpoint-interface element defines the Java
 	    type for the endpoint interface. The name must be a fully
 	    qualified class name.
 
@@ -562,19 +562,19 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The service-endpoint-method-mapping element defines the mapping of
+	The facade-endpoint-method-mapping element defines the mapping of
 	Java methods to operations (which are not uniquely qualified by
 	qnames).
 
 	The wsdl-operation should be interpreted with respect to the
 	portType and binding in which this definition is embedded within.
-	See the definitions for service-endpoint-interface-mapping and
-	service-interface-mapping to acquire the proper context.  The
+	See the definitions for facade-endpoint-interface-mapping and
+	facade-interface-mapping to acquire the proper context.  The
 	wrapped-element indicator should only be specified when a WSDL
 	message wraps an element type.  The wsdl-return-value-mapping is
 	not specified for one-way operations.
 
-	Used in: service-endpoint-interface-mapping
+	Used in: facade-endpoint-interface-mapping
 
       </xsd:documentation>
     </xsd:annotation>
@@ -632,10 +632,10 @@
     <xsd:annotation>
       <xsd:documentation>
 
-	The service-interface-mapping element defines how a Java type for
-	the service interface maps to a WSDL service.
+          The facade-interface-mapping element defines how a Java type for
+          the facade interface maps to a WSDL facade.
 
-	Used in: java-wsdl-mapping
+          Used in: java-wsdl-mapping
 
       </xsd:documentation>
     </xsd:annotation>
@@ -645,13 +645,13 @@
 	<xsd:annotation>
 	  <xsd:documentation>
 
-	    The service-interface element defines the Java type for the service.
-	    For static services, it is javax.xml.rpc.Service interface. For
-	    generated service, it would be the generated interface name.
+          The facade-interface element defines the Java type for the facade.
+          For static services, it is javax.xml.rpc.Service interface. For
+          generated facade, it would be the generated interface name.
 
-	    The name must be a fully qualified class name.
+          The name must be a fully qualified class name.
 
-	  </xsd:documentation>
+      </xsd:documentation>
 	</xsd:annotation>
       </xsd:element>
       <xsd:element name="wsdl-service-name"
@@ -659,10 +659,10 @@
 	<xsd:annotation>
 	  <xsd:documentation>
 
-	    The wsdl-service-name element defines the wsdl service name
-	    by a QNAME which uniquely identifies  the service.
+          The wsdl-facade-name element defines the wsdl facade name
+          by a QNAME which uniquely identifies the facade.
 
-	  </xsd:documentation>
+      </xsd:documentation>
 	</xsd:annotation>
       </xsd:element>
       <xsd:element name="port-mapping"
@@ -809,7 +809,7 @@
 
 	Interpretation of the wsdl-message-part-name element depends on
 	whether or not wrapped-element has been defined in the
-	service-endpoint-method-mapping.  If wrapped-element is not
+	facade-endpoint-method-mapping.  If wrapped-element is not
 	specified, wsdl-message-part-name defines a WSDL message part. It
 	should always be interpreted with respect to a wsdl-message
 	element. If wrapped-element is specified, wsdl-message-part-name
@@ -855,7 +855,7 @@
 	identified with their names. The wsdl-message-part-name is not
 	specified if there is no return value or OUT parameters.
 
-	Used in: service-endpoint-method-mapping
+	Used in: facade-endpoint-method-mapping
 
       </xsd:documentation>
     </xsd:annotation>

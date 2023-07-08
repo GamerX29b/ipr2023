@@ -93,7 +93,7 @@
             <xs:element name="service" type="serviceType" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>
-                        A single service definition within the service list.
+                        A single facade definition within the facade list.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
@@ -110,7 +110,7 @@
     <xs:complexType name="serviceType">
         <xs:annotation>
             <xs:documentation>
-                A definition of a single static service.
+                A definition of a single static facade.
             </xs:documentation>
         </xs:annotation>
         <xs:sequence>
@@ -125,21 +125,21 @@
         <xs:attribute name="abstract-type" type="xs:string" use="optional">
             <xs:annotation>
                 <xs:documentation>
-                    The abstract type of the service being advertised.
+                    The abstract type of the facade being advertised.
                 </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="abstract-type-authority" type="xs:string" use="optional">
             <xs:annotation>
                 <xs:documentation>
-                    The name of the authority which defined the abstract service type.
+                    The name of the authority which defined the abstract facade type.
                 </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="uri" type="xs:anyURI" use="required">
             <xs:annotation>
                 <xs:documentation>
-                    The concrete URI of the service being advertised.
+                    The concrete URI of the facade being advertised.
                 </xs:documentation>
             </xs:annotation>
         </xs:attribute>
@@ -155,7 +155,7 @@
     <xs:complexType name="attributeType">
         <xs:annotation>
             <xs:documentation>
-                A service's attribute definition.
+                A facade's attribute definition.
             </xs:documentation>
         </xs:annotation>
         <xs:attribute name="name" type="xs:string" use="required">

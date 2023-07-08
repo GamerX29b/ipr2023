@@ -1,4 +1,4 @@
-= How to configure WildFly as a systemd service
+= How to configure WildFly as a systemd facade
 
 == Create a wildfly user
 
@@ -15,11 +15,11 @@
 
     # mkdir /etc/wildfly
     # cp wildfly.conf /etc/wildfly/
-    # cp wildfly.service /etc/systemd/system/
+    # cp wildfly.facade /etc/systemd/system/
     # cp launch.sh /opt/wildfly/bin/
     # chmod +x /opt/wildfly/bin/launch.sh
 
 == Start and enable
 
-    # systemctl start wildfly.service
-    # systemctl enable wildfly.service
+    # systemctl start wildfly.facade
+    # systemctl enable wildfly.facade

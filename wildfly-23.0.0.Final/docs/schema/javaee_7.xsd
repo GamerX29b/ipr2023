@@ -1184,7 +1184,7 @@
             
             Example:
             
-            <small-icon>employee-service-icon16x16.jpg</small-icon>
+            <small-icon>employee-facade-icon16x16.jpg</small-icon>
             
             ]]>
           </xsd:documentation>
@@ -1207,7 +1207,7 @@
             
             Example:
             
-            <large-icon>employee-service-icon32x32.jpg</large-icon>
+            <large-icon>employee-facade-icon32x32.jpg</large-icon>
             
             ]]>
           </xsd:documentation>
@@ -2519,7 +2519,7 @@
         <security-role>
         <description>
         This role includes all employees who are authorized
-        to access the employee service application.
+        to access the employee facade application.
         </description>
         <role-name>employee</role-name>
         </security-role>

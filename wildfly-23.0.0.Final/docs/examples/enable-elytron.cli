@@ -11,14 +11,14 @@ embed-server --server-config=standalone.xml
 /subsystem=remoting/http-connector=http-remoting-connector:write-attribute(name=sasl-authentication-factory, value=application-sasl-authentication)
 /subsystem=remoting/http-connector=http-remoting-connector:undefine-attribute(name=security-realm)
 
-/core-service=management/access=identity:add(security-domain=ManagementDomain)
-/core-service=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
-/core-service=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
-/core-service=management/management-interface=http-interface:undefine-attribute(name=security-realm)
-/core-service=management/security-realm=ManagementRealm:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=local:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=properties:remove
-/core-service=management/security-realm=ApplicationRealm/authorization=properties:remove
+/core-facade=management/access=identity:add(security-domain=ManagementDomain)
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
+/core-facade=management/management-interface=http-interface:undefine-attribute(name=security-realm)
+/core-facade=management/security-realm=ManagementRealm:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=local:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=properties:remove
+/core-facade=management/security-realm=ApplicationRealm/authorization=properties:remove
 
 stop-embedded-server
 
@@ -32,14 +32,14 @@ embed-server --server-config=standalone-ha.xml
 /subsystem=remoting/http-connector=http-remoting-connector:write-attribute(name=sasl-authentication-factory, value=application-sasl-authentication)
 /subsystem=remoting/http-connector=http-remoting-connector:undefine-attribute(name=security-realm)
 
-/core-service=management/access=identity:add(security-domain=ManagementDomain)
-/core-service=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
-/core-service=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
-/core-service=management/management-interface=http-interface:undefine-attribute(name=security-realm)
-/core-service=management/security-realm=ManagementRealm:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=local:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=properties:remove
-/core-service=management/security-realm=ApplicationRealm/authorization=properties:remove
+/core-facade=management/access=identity:add(security-domain=ManagementDomain)
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
+/core-facade=management/management-interface=http-interface:undefine-attribute(name=security-realm)
+/core-facade=management/security-realm=ManagementRealm:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=local:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=properties:remove
+/core-facade=management/security-realm=ApplicationRealm/authorization=properties:remove
 
 stop-embedded-server
 
@@ -55,14 +55,14 @@ embed-server --server-config=standalone-full.xml
 /subsystem=remoting/http-connector=http-remoting-connector:write-attribute(name=sasl-authentication-factory, value=application-sasl-authentication)
 /subsystem=remoting/http-connector=http-remoting-connector:undefine-attribute(name=security-realm)
 
-/core-service=management/access=identity:add(security-domain=ManagementDomain)
-/core-service=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
-/core-service=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
-/core-service=management/management-interface=http-interface:undefine-attribute(name=security-realm)
-/core-service=management/security-realm=ManagementRealm:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=local:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=properties:remove
-/core-service=management/security-realm=ApplicationRealm/authorization=properties:remove
+/core-facade=management/access=identity:add(security-domain=ManagementDomain)
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
+/core-facade=management/management-interface=http-interface:undefine-attribute(name=security-realm)
+/core-facade=management/security-realm=ManagementRealm:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=local:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=properties:remove
+/core-facade=management/security-realm=ApplicationRealm/authorization=properties:remove
 
 stop-embedded-server
 
@@ -78,14 +78,14 @@ embed-server --server-config=standalone-full-ha.xml
 /subsystem=remoting/http-connector=http-remoting-connector:write-attribute(name=sasl-authentication-factory, value=application-sasl-authentication)
 /subsystem=remoting/http-connector=http-remoting-connector:undefine-attribute(name=security-realm)
 
-/core-service=management/access=identity:add(security-domain=ManagementDomain)
-/core-service=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
-/core-service=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
-/core-service=management/management-interface=http-interface:undefine-attribute(name=security-realm)
-/core-service=management/security-realm=ManagementRealm:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=local:remove
-/core-service=management/security-realm=ApplicationRealm/authentication=properties:remove
-/core-service=management/security-realm=ApplicationRealm/authorization=properties:remove
+/core-facade=management/access=identity:add(security-domain=ManagementDomain)
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
+/core-facade=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
+/core-facade=management/management-interface=http-interface:undefine-attribute(name=security-realm)
+/core-facade=management/security-realm=ManagementRealm:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=local:remove
+/core-facade=management/security-realm=ApplicationRealm/authentication=properties:remove
+/core-facade=management/security-realm=ApplicationRealm/authorization=properties:remove
 
 stop-embedded-server
 
@@ -120,15 +120,15 @@ embed-host-controller
 /profile=ha/subsystem=remoting/http-connector=http-remoting-connector:write-attribute(name=sasl-authentication-factory, value=application-sasl-authentication)
 /profile=ha/subsystem=remoting/http-connector=http-remoting-connector:undefine-attribute(name=security-realm)
 
-/host=master/core-service=management/access=identity:add(security-domain=ManagementDomain)
-/host=master/core-service=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
-/host=master/core-service=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
-/host=master/core-service=management/management-interface=http-interface:undefine-attribute(name=security-realm)
+/host=master/core-facade=management/access=identity:add(security-domain=ManagementDomain)
+/host=master/core-facade=management/management-interface=http-interface:write-attribute(name=http-upgrade,value={enabled=true, sasl-authentication-factory=management-sasl-authentication})
+/host=master/core-facade=management/management-interface=http-interface:write-attribute(name=http-authentication-factory,value=management-http-authentication)
+/host=master/core-facade=management/management-interface=http-interface:undefine-attribute(name=security-realm)
 
-/host=master/core-service=management/security-realm=ManagementRealm:remove
-/host=master/core-service=management/security-realm=ApplicationRealm/authentication=local:remove
-/host=master/core-service=management/security-realm=ApplicationRealm/authentication=properties:remove
-/host=master/core-service=management/security-realm=ApplicationRealm/authorization=properties:remove
+/host=master/core-facade=management/security-realm=ManagementRealm:remove
+/host=master/core-facade=management/security-realm=ApplicationRealm/authentication=local:remove
+/host=master/core-facade=management/security-realm=ApplicationRealm/authentication=properties:remove
+/host=master/core-facade=management/security-realm=ApplicationRealm/authorization=properties:remove
 
 stop-embedded-host-controller
 

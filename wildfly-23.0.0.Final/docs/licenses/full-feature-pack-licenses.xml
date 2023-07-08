@@ -1098,7 +1098,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.activemq</groupId>
-      <artifactId>artemis-service-extensions</artifactId>
+      <artifactId>artemis-facade-extensions</artifactId>
       <version>2.16.0</version>
       <licenses>
         <license>
@@ -5063,7 +5063,7 @@
     </dependency>
     <dependency>
       <groupId>org.wildfly</groupId>
-      <artifactId>wildfly-clustering-service</artifactId>
+      <artifactId>wildfly-clustering-facade</artifactId>
       <version>23.0.0.Final</version>
       <licenses>
         <license>

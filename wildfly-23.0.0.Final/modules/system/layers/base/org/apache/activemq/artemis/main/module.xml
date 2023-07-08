@@ -32,7 +32,7 @@
         <resource-root path="artemis-jdbc-store-2.16.0.jar"/>
         <resource-root path="artemis-jms-client-2.16.0.jar"/>
         <resource-root path="artemis-jms-server-2.16.0.jar"/>
-        <resource-root path="artemis-service-extensions-2.16.0.jar"/>
+        <resource-root path="artemis-facade-extensions-2.16.0.jar"/>
         <resource-root path="artemis-tools-2.16.0.jar"/>
     </resources>
 

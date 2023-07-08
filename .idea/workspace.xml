@@ -1,16 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="alphaProject:ear" />
+      <artifact name="bettaProject:ear" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Push">
-      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/java/dto/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperatureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/java/facade/WeatherFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bettaProject/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/com/ipr2023WeatherLibrary/1/ipr2023WeatherLibrary-1.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/com/ipr2023WeatherLibrary/1/ipr2023WeatherLibrary-1.pom.md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/com/ipr2023WeatherLibrary/1/ipr2023WeatherLibrary-1.pom.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperatureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperatureService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/alphaProject-1.0.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/alphaProject-1.0/WEB-INF/classes/centralTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/alphaProject-1.0/WEB-INF/lib/ipr2023WeatherLibrary-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/alphaProject-1.0/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/target/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/classes/centralTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/service/WeatherFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/service/WeatherFacadeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/timer/WeatherTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/timer/WeatherTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/target/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/target/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr2023WeatherLibrary/target/classes/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/ipr2023WeatherLibrary/target/classes/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/service/service.bat" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/service/service.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/systemd/README" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/systemd/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/systemd/wildfly.service" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/contrib/scripts/systemd/wildfly.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/domain-ec2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/domain-ec2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-activemq-colocated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-activemq-colocated.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-azure-full-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-azure-full-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-azure-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-azure-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-ec2-full-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-ec2-full-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-ec2-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-ec2-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-genericjms.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-genericjms.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-gossip-full-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-gossip-full-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-gossip-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-gossip-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-jts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-jts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-picketlink.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-picketlink.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-rts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-rts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-xts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/configs/standalone-xts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/enable-elytron.cli" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/enable-elytron.cli" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/enable-microprofile.cli" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/examples/enable-microprofile.cli" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/apache license 2.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/apache license 2.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/creative commons attribution 2.5.html" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/creative commons attribution 2.5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/full-feature-pack-licenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/full-feature-pack-licenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/full-feature-pack-licenses.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/full-feature-pack-licenses.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu general public license v2.0 only, with classpath exception.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu general public license v2.0 only, with classpath exception.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu general public license v2.0 only.html" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu general public license v2.0 only.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu general public license, version 2 with the classpath exception.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu general public license, version 2 with the classpath exception.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu lesser general public license v2.1 only.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu lesser general public license v2.1 only.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu lesser general public license v2.1 or later.html" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu lesser general public license v2.1 or later.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu lesser general public license v2.1 or later.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu lesser general public license v2.1 or later.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu library general public license v2 only.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/gnu library general public license v2 only.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/licenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/licenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/licenses.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/licenses.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/mozilla public license 2.0.html" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/licenses/mozilla public license 2.0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/application-client_6.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/application-client_6.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/application-client_7.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/application-client_7.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/application-client_8.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/application-client_8.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_2_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_2_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_3_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_3_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_3_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/ejb-jar_3_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_6.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/elytron-client-1_6.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_jaxrpc_mapping_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_jaxrpc_mapping_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_web_services_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_web_services_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_web_services_client_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/j2ee_web_services_client_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_6.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_6.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_7.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_7.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_8.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_8.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_client_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_client_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_client_1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_client_1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_client_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/javaee_web_services_client_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_4_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_4_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_5_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_5_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_6_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ee_6_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ejb3_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-ejb3_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-iiop-openjdk_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-iiop-openjdk_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_10_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_10_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_11_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_11_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_12_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_12_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_1_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_6_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_6_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_7_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_7_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_8_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_8_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_9_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_9_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_9_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-infinispan_9_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-jacorb_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_1_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_1_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-messaging_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-remoting_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-remoting_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-remoting_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-remoting_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-remoting_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-remoting_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-threads_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-threads_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-threads_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-threads_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_1_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-txn_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_1_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_2_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_2_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_2_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-web_2_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-xts_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-xts_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-xts_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-xts_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-xts_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-as-xts_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_5_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_5_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_6_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_6_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_7_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_7_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_7_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_7_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_8_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-common_8_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-deployment-structure-1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-ejb-iiop_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-ejb-iiop_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-ejb-iiop_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-ejb-iiop_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-service_7_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-service_7_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jboss-web_7_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jndi-binding-service_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/jndi-binding-service_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_6.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_6.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_7.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_7.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_8.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_8.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_9.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/module-1_9.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-app_2_5.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-app_2_5.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-common_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-common_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-common_3_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-common_3_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-common_4_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/web-common_4_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-discovery_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-discovery_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_10_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_10_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_11_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_11_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_12_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_12_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_13_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_13_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_1_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_1_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_1_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_1_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_1_2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_1_2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_4_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_4_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_5_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_5_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_6_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_6_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_7_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_7_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_8_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_8_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_9_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-elytron_9_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-iiop-openjdk_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-iiop-openjdk_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-iiop-openjdk_2_1.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-iiop-openjdk_2_1.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-remoting_2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-remoting_2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-remoting_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-remoting_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-remoting_4_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-remoting_4_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_4_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_4_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_5_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_5_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_6_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/docs/schema/wildfly-txn_6_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/domain/configuration/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/domain/configuration/domain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/com/h2database/h2/2.1.210/h2-license-mpl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/com/h2database/h2/2.1.210/h2-license-mpl.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/apache/activemq/artemis/journal/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/apache/activemq/artemis/journal/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/apache/activemq/artemis/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/apache/activemq/artemis/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/apache/logging/log4j/api/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/apache/logging/log4j/api/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/jboss/as/sar/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/jboss/as/sar/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/jboss/as/xts/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/jboss/as/xts/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/wildfly/clustering/service/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/org/wildfly/clustering/service/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/sun/jdk/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/sun/jdk/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/sun/scripting/main/module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/modules/system/layers/base/sun/scripting/main/module.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone-full-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone-full-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone-full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone-full.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone-ha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone-ha.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-173726288/standalone.v4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-205303666/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-205303666/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-205303666/standalone.v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-205303666/standalone.v2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-205856794/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-205856794/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-212717061/standalone.v7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-213517846/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-213517846/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-213517846/standalone.v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-213517846/standalone.v2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-213517846/standalone.v3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-213517846/standalone.v3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-215152416/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-215152416/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-215152416/standalone.v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-215152416/standalone.v2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-215152416/standalone.v3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230702-215152416/standalone.v3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-223533660/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-223533660/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230005601/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230005601/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230005601/standalone.v2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230005601/standalone.v2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230005601/standalone.v3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230005601/standalone.v3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230040710/standalone.v1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/20230703-230040710/standalone.v1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/standalone.boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/standalone.boot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/standalone.initial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/standalone.initial.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/standalone.last.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/configuration/standalone_xml_history/standalone.last.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/deployments/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/deployments/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/log/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/log/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/log/server.log.2023-07-02" beforeDir="false" afterPath="$PROJECT_DIR$/wildfly-23.0.0.Final/standalone/log/server.log.2023-07-02" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,48 +296,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Lab/ipr2023/bettaProject/src/main/java/database/dao&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "temurin-11",
+    "last_opened_file_path": "D:/Lab/ipr2023/alphaProject/src/main/webapp/WEB-INF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;,
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2",
+      "sqlite"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lab\ipr2023\alphaProject\src\main\webapp\WEB-INF" />
+      <recent name="D:\Lab\ipr2023\bettaProject\src\main\webapp\WEB-INF" />
+      <recent name="D:\Lab\ipr2023\alphaProject\src\main\java" />
       <recent name="D:\Lab\ipr2023\bettaProject\src\main\java\database\dao" />
       <recent name="D:\Lab\ipr2023\alphaProject\src\main" />
-      <recent name="D:\Lab\ipr2023\lib" />
-      <recent name="D:\Lab\ipr2023\bettaProject\src\main\java" />
-      <recent name="D:\Lab\ipr2023\bettaProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Lab\ipr2023\alphaProject\src\main\webapp\WEB-INF" />
       <recent name="D:\Lab\ipr2023\bettaProject\src\main\webapp" />
       <recent name="D:\Lab\ipr2023\alphaProject" />
     </key>
@@ -213,7 +457,9 @@
       <workItem from="1688396943925" duration="2776000" />
       <workItem from="1688486253031" duration="5813000" />
       <workItem from="1688573235946" duration="5137000" />
-      <workItem from="1688655858145" duration="4278000" />
+      <workItem from="1688655858145" duration="4395000" />
+      <workItem from="1688748217134" duration="1334000" />
+      <workItem from="1688786377992" duration="7811000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
@@ -243,7 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688578249363</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Push">
+      <created>1688664629443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688664629443</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Push">
+      <created>1688664686920</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688664686920</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

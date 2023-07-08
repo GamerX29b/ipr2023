@@ -196,9 +196,9 @@
         <xs:annotation>
             <xs:documentation>
                 <![CDATA[
-                The namingConfigType specifies the attributes used to configure the naming service.
+                The namingConfigType specifies the attributes used to configure the naming facade.
 
-                * root-context: the naming service root context.
+                * root-context: the naming facade root context.
                 * export-corbaloc: indicates whether the root context should be exported as corbaloc::address:port/NameService
                                    (on) or not (off).
                         ]]>

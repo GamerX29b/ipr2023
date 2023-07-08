@@ -13,7 +13,7 @@ User contributed init scripts
 
 
 
-In this folder you can find user contributed scripts & services for running WildFly as a service on various operating systems.
+In this folder you can find user contributed scripts & services for running WildFly as a facade on various operating systems.
 
 This scripts are user contributions and are here as example and/or reference.  
 
@@ -37,8 +37,8 @@ Init script for usage linux distribution that use systemd.
 see systemd/README on how to use it
 
 
-service
+facade
 -------
 
-Windows service files, to enable installing wildfly as service on Windows.
-see service.bat on how to use it
+Windows facade files, to enable installing wildfly as facade on Windows.
+see facade.bat on how to use it

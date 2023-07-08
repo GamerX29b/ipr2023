@@ -459,7 +459,7 @@
     <xsd:simpleType name="serviceDispositionType">
         <annotation xmlns="http://www.w3.org/2001/XMLSchema">
             <documentation>
-                The requested behavior for service handling on a dependency.
+                The requested behavior for facade handling on a dependency.
             </documentation>
         </annotation>
         <xsd:restriction base="xsd:token">

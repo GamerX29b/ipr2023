@@ -144,7 +144,7 @@
     <xs:complexType name="contextServiceType">
         <xs:annotation>
             <xs:documentation>
-                The context service (implementing javax.enterprise.concurrent.ContextService).
+                The context facade (implementing javax.enterprise.concurrent.ContextService).
             </xs:documentation>
         </xs:annotation>
         <xs:attribute name="name" type="nameType" use="required"/>
@@ -152,7 +152,7 @@
         <xs:attribute name="use-transaction-setup-provider" type="xs:boolean" default="false">
             <xs:annotation>
                 <xs:documentation>
-                    The optional attribute that defines if the context service should use a transaction setup provider, which may be used to suspend and resume active transactions.
+                    The optional attribute that defines if the context facade should use a transaction setup provider, which may be used to suspend and resume active transactions.
                 </xs:documentation>
             </xs:annotation>
         </xs:attribute>
@@ -170,7 +170,7 @@
                 A managed thread factory (implementing javax.enterprise.concurrent.ManagedThreadFactory).
                 The mandatory "name" attribute, which may not be empty or have the value "default", identifies the
                 created thread factory.
-                The optional "context-service" identifies which Context Service should be used by created threads.
+                The optional "context-facade" identifies which Context Service should be used by created threads.
                 The optional "priority" attribute may be used to specify the priority of created threads.
             </xs:documentation>
         </xs:annotation>
@@ -189,8 +189,8 @@
     <xs:complexType name="managedExecutorServiceType">
         <xs:annotation>
             <xs:documentation>
-                A managed executor service (implementing javax.enterprise.concurrent.ManagedExecutorService).
-                If the "thread-factory" attribute is not defined a managed thread factory with no context service and normal thread priority will be created and used by the executor.
+                A managed executor facade (implementing javax.enterprise.concurrent.ManagedExecutorService).
+                If the "thread-factory" attribute is not defined a managed thread factory with no context facade and normal thread priority will be created and used by the executor.
                 The task queue is based on the values of "core-threads" and "queue-length":
                 * If "queue-length" is 0, or "queue-length" is Integer.MAX_VALUE (2147483647) and "core-threads" is 0, direct handoff queuing strategy will be used and a SynchronousQueue will be created.
                 * If "queue-length" is Integer.MAX_VALUE but "core-threads" is not 0, an unbounded queue will be used.
@@ -219,8 +219,8 @@
     <xs:complexType name="managedScheduledExecutorServiceType">
         <xs:annotation>
             <xs:documentation>
-                A managed scheduled executor service (implementing javax.enterprise.concurrent.ManagedScheduledExecutorService).
-                If the "thread-factory" attribute is not defined a managed thread factory with no context service and normal thread priority will be created and used by the executor.
+                A managed scheduled executor facade (implementing javax.enterprise.concurrent.ManagedScheduledExecutorService).
+                If the "thread-factory" attribute is not defined a managed thread factory with no context facade and normal thread priority will be created and used by the executor.
             </xs:documentation>
         </xs:annotation>
         <xs:attribute name="name" type="nameType" use="required"/>
@@ -266,7 +266,7 @@
     <xs:simpleType name="contextServiceNameType">
         <xs:annotation>
             <xs:documentation>
-                The name of the context service to be used.
+                The name of the context facade to be used.
             </xs:documentation>
         </xs:annotation>
         <xs:restriction base="nonEmptyTokenType" />
@@ -393,11 +393,11 @@
         <xs:annotation>
             <xs:documentation>
                 The JNDI names for the default resources on EE components/modules JNDI contexts.
-                The optional context-service attribute defines the JNDI name of the EE Concurrency ContextService that should be bound at java:comp/DefaultContextService.
+                The optional context-facade attribute defines the JNDI name of the EE Concurrency ContextService that should be bound at java:comp/DefaultContextService.
                 The optional datasource attribute defines the JNDI name of the SQL DataSource that should be bound at java:comp/DefaultDataSource.
                 The optional jms-connection-factory attribute defines the JNDI name of the JMS ConnectionFactory that should be bound at java:comp/DefaultJMSConnectionFactory.
-                The optional managed-executor-service attribute defines the JNDI name of the EE Concurrency ManagedExecutorService that should be bound at java:comp/DefaultManagedExecutorService.
-                The optional managed-scheduled-executor-service attribute defines the JNDI name of the EE Concurrency ManagedScheduledExecutorService that should be bound at java:comp/DefaultManagedScheduledExecutorService.
+                The optional managed-executor-facade attribute defines the JNDI name of the EE Concurrency ManagedExecutorService that should be bound at java:comp/DefaultManagedExecutorService.
+                The optional managed-scheduled-executor-facade attribute defines the JNDI name of the EE Concurrency ManagedScheduledExecutorService that should be bound at java:comp/DefaultManagedScheduledExecutorService.
                 The optional managed-thread-factory attribute defines the JNDI name of the EE Concurrency ManagedThreadFactory that should be bound at java:comp/DefaultManagedThreadFactory.
             </xs:documentation>
         </xs:annotation>

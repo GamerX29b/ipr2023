@@ -508,8 +508,8 @@
     <xs:complexType name="ref">
         <xs:annotation>
             <xs:documentation>
-            <![CDATA[
-                A reference to another named service.
+                <![CDATA[
+                A reference to another named facade.
             ]]>
             </xs:documentation>
         </xs:annotation>

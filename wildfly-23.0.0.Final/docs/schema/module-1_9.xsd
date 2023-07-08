@@ -233,7 +233,7 @@
     <xsd:simpleType name="serviceDispositionType">
         <annotation xmlns="http://www.w3.org/2001/XMLSchema">
             <documentation>
-                The requested behavior for service handling on a dependency.
+                The requested behavior for facade handling on a dependency.
             </documentation>
         </annotation>
         <xsd:restriction base="xsd:string">
@@ -623,7 +623,7 @@
             <xsd:element name="service" type="providedServiceType">
                 <xsd:annotation>
                     <xsd:documentation>
-                        A service to provide.
+                        A facade to provide.
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
@@ -633,7 +633,7 @@
     <xsd:complexType name="providedServiceType">
         <xsd:annotation>
             <xsd:documentation>
-                A service that is provided by one or more implementations.
+                A facade that is provided by one or more implementations.
             </xsd:documentation>
         </xsd:annotation>
         <xsd:choice minOccurs="0" maxOccurs="unbounded">
@@ -642,7 +642,7 @@
         <xsd:attribute name="name" type="xsd:string" use="required">
             <xsd:annotation>
                 <xsd:documentation>
-                    The name of the service type.
+                    The name of the facade type.
                 </xsd:documentation>
             </xsd:annotation>
         </xsd:attribute>
