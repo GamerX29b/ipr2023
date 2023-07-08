@@ -1,6 +1,6 @@
 package database.dao;
 
-import dto.Weather;
+import dto.WeatherDto;
 
 import javax.ejb.Local;
 import java.util.Date;
@@ -8,7 +8,7 @@ import java.util.Date;
 @Local
 public interface WeatherService {
 
-    Weather findTemperatureByDate(Date date);
+    WeatherDto findTemperatureByDate(Date date);
 
-    void createNewTemperatureRecord(Weather weather);
+    Weather createNewTemperatureRecord(WeatherDto weatherDto);
 }

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet("/temperature")
-public class WebTemperature extends HttpServlet implements WebTemperatureService{
+public class WebTemperature extends HttpServlet{
 
     @Resource(name = "jdbc/WeatherFacade")
     WeatherFacade weatherFacade;

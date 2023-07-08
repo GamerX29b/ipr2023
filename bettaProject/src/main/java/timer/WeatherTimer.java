@@ -2,7 +2,7 @@ package timer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import database.dao.WeatherService;
 import dto.DataWeatherApi;
-import dto.Weather;
+import dto.WeatherDto;
 import dto.WeatherApiResponse;
 
 import javax.ejb.*;
@@ -24,14 +24,14 @@ public class WeatherTimer {
 
     Logger log = Logger.getLogger(WeatherTimer.class.getName());
 
-    @Schedule(second="0", minute="1", hour="*", month="*", year="*")
+    @Schedule(second="1", minute="*", hour="*", month="*")//Раз в минуту
     public void whyTemperature() throws IOException, ParseException, InterruptedException {
-        Weather weather = getActualTemperature();
+        WeatherDto weather = getActualTemperature();
         weatherService.createNewTemperatureRecord(weather);
         log.warning("Таймер сработал" + new Date());
     }
 
-    public Weather getActualTemperature() throws IOException, InterruptedException, ParseException {
+    public WeatherDto getActualTemperature() throws IOException, InterruptedException, ParseException {
         Date date = new Date();
         SimpleDateFormat parserFromApi = new SimpleDateFormat("YYYY-MM-dd");
         SimpleDateFormat parserFromSearch = new SimpleDateFormat("HH");
@@ -49,7 +49,7 @@ public class WeatherTimer {
         WeatherApiResponse weatherApiResponse = objectMapper.readValue(response.body(), WeatherApiResponse.class);
         DataWeatherApi dwa = weatherApiResponse.getData().get(Integer.parseInt(parserFromSearch.format(date)));
 
-        Weather weather = new Weather();
+        WeatherDto weather = new WeatherDto();
         weather.setTemperature(dwa.getTemp());
         weather.setHumidity(dwa.getDwpt());
         weather.setTimestamp(parserFromApi.parse(weatherApiResponse.getMeta().getGenerated()));

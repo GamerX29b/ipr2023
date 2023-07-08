@@ -1,29 +1,28 @@
-package database.model;
+package database.dao;
 
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.inject.Named;
+import javax.persistence.*;
 
 @Entity
-@Table(name="groups")
-public class WeatherModel implements Serializable {
+@Table(name="WEATHER")
+public class Weather implements Serializable {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.TABLE)
-    @Column(name="WEATHER")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="ID")
     private Long id;
+
+    @Column(name="DATA")
+    Date data;
+
     @Column(name = "TEMPERATURE")
     Double temperature;
-    @Column(name = "HUMIDITY")
 
+    @Column(name = "HUMIDITY")
     Double humidity;
-    @Column(name="DATA")
-    Date timestamp;
+
 
 
     public Double getTemperature() {
@@ -42,12 +41,12 @@ public class WeatherModel implements Serializable {
         this.humidity = humidity;
     }
 
-    public Date getTimestamp() {
-        return timestamp;
+    public Date getData() {
+        return data;
     }
 
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
+    public void setData(Date data) {
+        this.data = data;
     }
 
     public void setId(Long id) {
