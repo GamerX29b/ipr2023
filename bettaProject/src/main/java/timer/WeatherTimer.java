@@ -24,10 +24,10 @@ public class WeatherTimer {
 
     Logger log = Logger.getLogger(WeatherTimer.class.getName());
 
-    @Schedule(second="1", minute="*", hour="*", month="*")//Раз в минуту
+    @Schedule(second="*", minute="1", hour="*", month="*")//Раз в минуту
     public void whyTemperature() throws IOException, ParseException, InterruptedException {
-//        WeatherDto weather = getActualTemperature();  //TODO сраная квота на фасад! Перед демонстрацией раскоментить.
-//        weatherService.createNewTemperatureRecord(weather);
+        WeatherDto weather = getActualTemperature();  //TODO сраная квота на фасад! Перед демонстрацией раскоментить.
+        weatherService.createNewTemperatureRecord(weather); //You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan
         log.warning("Таймер сработал" + new Date());
     }
 
