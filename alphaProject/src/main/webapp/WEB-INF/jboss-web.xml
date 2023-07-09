@@ -3,9 +3,6 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://www.jboss.com/xml/ns/javaee http://www.jboss.org/j2ee/schema/jboss-web_7_0.xsd"
            version="7.0">
-    <ejb-ref>
-        <ejb-ref-name>ejb/TemperatureService</ejb-ref-name>
-        <jndi-name>java:global/TemperatureService</jndi-name>
-    </ejb-ref>
+
 </jboss-web>
 

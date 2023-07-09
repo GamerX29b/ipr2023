@@ -26,8 +26,8 @@ public class WeatherTimer {
 
     @Schedule(second="1", minute="*", hour="*", month="*")//Раз в минуту
     public void whyTemperature() throws IOException, ParseException, InterruptedException {
-        WeatherDto weather = getActualTemperature();
-        weatherService.createNewTemperatureRecord(weather);
+//        WeatherDto weather = getActualTemperature();  //TODO сраная квота на фасад! Перед демонстрацией раскоментить.
+//        weatherService.createNewTemperatureRecord(weather);
         log.warning("Таймер сработал" + new Date());
     }
 

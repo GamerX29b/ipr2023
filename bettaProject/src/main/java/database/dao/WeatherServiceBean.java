@@ -14,13 +14,13 @@ public class WeatherServiceBean implements WeatherService{
 
     Logger log = Logger.getLogger(WeatherServiceBean.class.getName());
 
-    @PersistenceContext(unitName="weather")
+    @PersistenceContext
     private EntityManager entityManager;
 
     @Override
     public WeatherDto findTemperatureByDate(Date date){
 
-        Query q = entityManager.createQuery("SELECT TEMPERATURE, HUMIDITY FROM WEATHER w WHERE w.DATA = :data");
+        Query q = entityManager.createQuery("SELECT temperature, humidity FROM Weather w WHERE w.data = :data");
         q.setParameter("data", date);
         Weather singleResult = (Weather) q.getSingleResult();
 

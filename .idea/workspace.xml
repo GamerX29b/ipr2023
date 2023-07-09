@@ -10,30 +10,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Собирается, деплоится, но не работает.">
-      <change afterPath="$PROJECT_DIR$/bettaProject/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bettaProject/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bettaProject/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9854d6b-2d98-4034-a980-3c0a929cc8ed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9854d6b-2d98-4034-a980-3c0a929cc8ed.xml" afterDir="false" />
+    <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Собиратеся, деплоится, работает, мелкий баг с базой.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alphaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/dto/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/java/dto/WeatherDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/facade/WeatherFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/java/facade/WeatherFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperatureService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/ConnectBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/Weather.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/model/WeatherModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/dto/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/dto/WeatherDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/timer/WeatherTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/timer/WeatherTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr2023SqlLite" beforeDir="false" afterPath="$PROJECT_DIR$/ipr2023SqlLite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr2023WeatherLibrary/src/main/java/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/ipr2023WeatherLibrary/src/main/java/WeatherDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr2023WeatherLibrary/target/classes/Weather.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,40 +78,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "temurin-11",
-    "last_opened_file_path": "D:/Lab/wildfly-23.0.0.Final",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lab/wildfly-23.0.0.Final&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2",
-      "sqlite",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;,
+      &quot;sqlite&quot;,
+      &quot;postgresql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JAVA"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Lab\ipr2023\bettaProject\src\main\resources" />
@@ -150,9 +139,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JBoss/WildFly 23.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 23.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/temperature" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="JBoss/WildFly 23.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 23.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="temurin-11" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/alphaProject-1.0/temperature" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="bettaProject:war">
           <settings />
@@ -166,8 +155,8 @@
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
         <option name="SERVER_GROUP" />
-        <option name="USERNAME" value="" />
-        <option name="CREDENTIAL_ALIAS" />
+        <option name="USERNAME" value="user" />
+        <option name="CREDENTIAL_ALIAS" value="58ff52b8-50ec-4e80-8ce7-0dcbe2d5c183" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
@@ -257,7 +246,8 @@
       <workItem from="1688748217134" duration="1334000" />
       <workItem from="1688786377992" duration="13571000" />
       <workItem from="1688802460826" duration="690000" />
-      <workItem from="1688803163812" duration="20070000" />
+      <workItem from="1688803163812" duration="20991000" />
+      <workItem from="1688881668852" duration="15839000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
@@ -315,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688803396288</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Собиратеся, деплоится, работает, мелкий баг с базой.">
+      <created>1688823635855</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688823635855</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,23 +344,10 @@
     <MESSAGE value="Запушить" />
     <MESSAGE value="Push" />
     <MESSAGE value="Собирается, деплоится, но не работает." />
-    <option name="LAST_COMMIT_MESSAGE" value="Собирается, деплоится, но не работает." />
+    <MESSAGE value="Собиратеся, деплоится, работает, мелкий баг с базой." />
+    <option name="LAST_COMMIT_MESSAGE" value="Собиратеся, деплоится, работает, мелкий баг с базой." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.hibernate.internal.SessionFactoryImpl" memberName="sqlFunctionRegistry" />

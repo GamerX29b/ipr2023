@@ -1,13 +1,12 @@
 package facade;
 
 
-import dto.Weather;
+import dto.WeatherDto;
 
 import javax.ejb.Remote;
 
-@Remote
 public interface WeatherFacade{
 
-    Weather temperature();
+    WeatherDto temperature();
 
 }

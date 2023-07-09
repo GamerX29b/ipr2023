@@ -7,6 +7,6 @@ import javax.ejb.Remote;
 @Remote
 public interface WeatherFacade{
 
-    WeatherDto temperature ();
+    WeatherDto temperature();
 
 }
