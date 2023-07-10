@@ -2,14 +2,16 @@ package database.dao;
 
 import dto.WeatherDto;
 
-import javax.ejb.Stateless;
+import javax.ejb.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Logger;
 
 @Stateless
+@TransactionManagement(TransactionManagementType.CONTAINER)
 public class WeatherServiceBean implements WeatherService{
 
     Logger log = Logger.getLogger(WeatherServiceBean.class.getName());
@@ -20,10 +22,10 @@ public class WeatherServiceBean implements WeatherService{
     @Override
     public WeatherDto findTemperatureByDate(Date date){
 
-        Query q = entityManager.createQuery("SELECT temperature, humidity FROM Weather w WHERE w.data = :data");
+        Query q = entityManager.createQuery("SELECT w FROM Weather w WHERE w.data = :data");
         q.setParameter("data", date);
-        Weather singleResult = (Weather) q.getSingleResult();
-
+        List<Weather> weatherList = (List<Weather>) q.getResultList();
+        Weather singleResult = weatherList.get(0);
         WeatherDto weather = new WeatherDto();
 
         weather.setTemperature(singleResult.getTemperature());
@@ -34,6 +36,7 @@ public class WeatherServiceBean implements WeatherService{
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public Weather createNewTemperatureRecord(WeatherDto weatherDto){
         Weather weatherModel = new Weather();
         weatherModel.setTemperature(weatherDto.getTemperature());

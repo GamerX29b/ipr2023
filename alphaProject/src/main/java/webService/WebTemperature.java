@@ -23,7 +23,7 @@ public class WebTemperature extends HttpServlet{
     PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<body>");
-        out.println("<h1>" + getWeatherFacade().temperature() + "</h1>");
+        out.println("<h1>Temperature: " + getWeatherFacade().temperature().getTemperature() + "c Humidity: " + getWeatherFacade().temperature().getHumidity() + "%</h1>");
         out.println("</body>");
         out.println("</html>");
         out.close();
