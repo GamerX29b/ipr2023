@@ -5,6 +5,7 @@ import dto.WeatherDto;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.Calendar;
 import java.util.Date;
 
 @Stateless
@@ -15,7 +16,12 @@ public class WeatherFacadeBean implements WeatherFacade{
 
     @Override
     public WeatherDto temperature (){
-        return weatherService.findTemperatureByDate(new Date());
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(new Date());
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        return weatherService.findTemperatureByDate(cal.getTime());
     }
 
 }
