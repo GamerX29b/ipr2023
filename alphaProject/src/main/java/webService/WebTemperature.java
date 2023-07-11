@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@WebServlet("/temperature")
+@WebServlet(value = "/temperature", name = "webTemperature", displayName = "Temp")
 public class WebTemperature extends HttpServlet{
     Logger log = Logger.getLogger(WebTemperature.class.getName());
 

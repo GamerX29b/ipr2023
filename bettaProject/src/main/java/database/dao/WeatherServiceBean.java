@@ -2,6 +2,7 @@ package database.dao;
 
 import dto.WeatherDto;
 
+import javax.annotation.PreDestroy;
 import javax.ejb.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -10,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Logger;
 
-@Stateless
+@Stateful
 @TransactionManagement(TransactionManagementType.CONTAINER)
 public class WeatherServiceBean implements WeatherService{
 
@@ -20,6 +21,7 @@ public class WeatherServiceBean implements WeatherService{
     private EntityManager entityManager;
 
     @Override
+    @Lock(LockType.READ)
     public WeatherDto findTemperatureByDate(Date date){
 
         Query q = entityManager.createQuery("SELECT w FROM Weather w WHERE w.data = :data");
@@ -46,5 +48,10 @@ public class WeatherServiceBean implements WeatherService{
         entityManager.persist(weatherModel);
         return weatherModel;
 
+    }
+
+    @PreDestroy
+    public void calledPreDestroy(){
+        log.info("I'm destroy WeatherService");
     }
 }
