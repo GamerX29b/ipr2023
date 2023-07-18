@@ -7,22 +7,14 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>alphaProject</artifactId>
     <packaging>war</packaging>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
     <groupId>org.ipr.alphaProject</groupId>
     <version>1.0</version>
 
-    <repositories>
-        <repository>
-            <id>localrep</id>
-            <name>localrep</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
     <dependencies>
-        <dependency>
-            <groupId>com</groupId>
-            <artifactId>ipr2023WeatherLibrary</artifactId>
-            <version>1.0</version>
-        </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
