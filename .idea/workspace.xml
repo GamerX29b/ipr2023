@@ -10,9 +10,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Собиратеся, деплоится, работает в том числе Web и EJB вызов, мелкий баг с базой.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Последние правки и полировка">
+      <change afterPath="$PROJECT_DIR$/ipr_2024/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipr_2024/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +97,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Lab/Hello World&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lab/actionbazaar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,7 +106,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -126,14 +141,14 @@
     </key>
   </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 23.0.0.Final">
-    <configuration name="centralTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="centralTest" />
-      <module name="bettaProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="JBoss/WildFly 23.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 23.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="temurin-11" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/alphaProject-1.0/temperature" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
@@ -208,13 +223,51 @@
         </option>
       </method>
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ipr_2024/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ipr_2024/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ipr_2024/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.centralTest" />
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 23.0.0.Final" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.lint" />
+      <item itemvalue="npm.serve" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.centralTest" />
+        <item itemvalue="npm.serve" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +296,21 @@
       <workItem from="1688803163812" duration="20991000" />
       <workItem from="1688881668852" duration="20738000" />
       <workItem from="1689001907100" duration="4055000" />
-      <workItem from="1689091568532" duration="1741000" />
+      <workItem from="1689091568532" duration="2429000" />
+      <workItem from="1689696364459" duration="1091000" />
+      <workItem from="1703265737728" duration="606000" />
+      <workItem from="1703338353677" duration="714000" />
+      <workItem from="1703936869817" duration="1306000" />
+      <workItem from="1703938186848" duration="1993000" />
+      <workItem from="1703946867466" duration="323000" />
+      <workItem from="1703947205146" duration="1527000" />
+      <workItem from="1704722847665" duration="5666000" />
+      <workItem from="1705216434181" duration="5797000" />
+      <workItem from="1705820215424" duration="3195000" />
+      <workItem from="1707475206793" duration="1396000" />
+      <workItem from="1707906941338" duration="8544000" />
+      <workItem from="1707974055099" duration="5422000" />
+      <workItem from="1707984572744" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
@@ -315,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688905305343</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Последние правки и полировка">
+      <created>1689093918720</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689093918720</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +423,8 @@
     <MESSAGE value="Собирается, деплоится, но не работает." />
     <MESSAGE value="Собиратеся, деплоится, работает, мелкий баг с базой." />
     <MESSAGE value="Собиратеся, деплоится, работает в том числе Web и EJB вызов, мелкий баг с базой." />
-    <option name="LAST_COMMIT_MESSAGE" value="Собиратеся, деплоится, работает в том числе Web и EJB вызов, мелкий баг с базой." />
+    <MESSAGE value="Последние правки и полировка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Последние правки и полировка" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

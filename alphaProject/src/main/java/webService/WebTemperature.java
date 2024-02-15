@@ -1,5 +1,6 @@
 package webService;
 
+import com.google.gson.Gson;
 import facade.WeatherFacade;
 
 import javax.naming.Context;
@@ -14,19 +15,32 @@ import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@WebServlet(value = "/temperature", name = "webTemperature", displayName = "Temp")
+@WebServlet(value = "/temperature", name = "temperature")
 public class WebTemperature extends HttpServlet{
     Logger log = Logger.getLogger(WebTemperature.class.getName());
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("<body>");
-        out.println("<h1>Temperature: " + getWeatherFacade().temperature().getTemperature() + "c Humidity: " + getWeatherFacade().temperature().getHumidity() + "%</h1>");
-        out.println("</body>");
-        out.println("</html>");
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        setAccessControlHeaders(response);
+        PrintWriter out = response.getWriter();
+        Gson gson = new Gson();
+        String json = gson.toJson(getWeatherFacade().temperature());
+        log.info(json);
+        out.println(json);
         out.close();
+    }
+
+    @Override
+    protected void doOptions(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        setAccessControlHeaders(resp);
+        resp.setStatus(HttpServletResponse.SC_OK);
+    }
+
+    private void setAccessControlHeaders(HttpServletResponse resp) {
+        resp.setHeader("Access-Control-Allow-Origin", "*");
+        resp.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, UPDATE, OPTIONS");
+        resp.setHeader("Access-Control-Allow-Headers", "Content-Type, Accept, X-Requested-With");
     }
 
     private WeatherFacade getWeatherFacade(){
