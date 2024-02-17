@@ -1,5 +1,5 @@
 <template>
-  <div class="base">
+  <div >
     <div class="block">Погодное приложение</div>
     <button class="block" @click="tempInfo">Сколько там на улице?</button>
     <div class="block" v-if="visible">Там на улице <strong>{{ temperature }}</strong> градусов и <strong>{{ humidity }}</strong> влажности </div>
@@ -54,11 +54,8 @@ export default {
 }
 
 .base {
-  margin: 10px 30px 10px 30px;
-  border: navy;
+  border-style: solid;
   border-radius: 2%;
-}
-.block {
-  margin: 10px 30px 10px 30px;
+  border-color: blue;
 }
 </style>

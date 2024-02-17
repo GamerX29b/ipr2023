@@ -11,13 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Последние правки и полировка">
-      <change afterPath="$PROJECT_DIR$/ipr_2024/src/components/upperBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipr_2024/src/pages/Main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherHere.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipr_2024/src/router/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ipr_2024/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/components/upperBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/components/upperBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/Central.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherHere.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherHere.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/router/router.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -90,7 +93,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "temurin-11",
-    "last_opened_file_path": "D:/Lab/vueTrain",
+    "last_opened_file_path": "D:/Lab/Vue3-crash-course-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -306,6 +309,10 @@
       <workItem from="1707974055099" duration="5422000" />
       <workItem from="1707984572744" duration="9000" />
       <workItem from="1708000936196" duration="9254000" />
+      <workItem from="1708014617603" duration="106000" />
+      <workItem from="1708057612637" duration="3008000" />
+      <workItem from="1708079147410" duration="9491000" />
+      <workItem from="1708150189212" duration="10928000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
