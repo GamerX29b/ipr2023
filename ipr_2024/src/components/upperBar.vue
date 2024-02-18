@@ -2,7 +2,7 @@
   <div>
     <div @click="toMain()"></div>
     <div>
-      <button class="buttonBlock" @click="toMain">main</button>
+      <button class="buttonBlock" @click="toMain">Главная</button>
       <button class="buttonBlock" @click="toHere">Страница текущей погоды</button>
       <button class="buttonBlock" @click="toOther">Погода в разных городах</button>
     </div>

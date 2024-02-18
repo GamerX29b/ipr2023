@@ -12,7 +12,7 @@
        <div id="temperature" class="divCell">Температура</div>
        <div id="press" class="divCell">Давление</div>
      </div>
-       <div v-for="tempData in temperatures.data" :key="tempData.id" class="divRow">
+       <div v-for="tempData in temperatures.data" :key="tempData.time" class="divRow">
          <div id="dateTime" class="divCell">{{ tempData.time }}</div>
          <div id="temperature" class="divCell">{{ tempData.temp }}</div>
          <div id="press" class="divCell">{{tempData.pres}}</div>
@@ -79,6 +79,9 @@ export default {
         console.error(error);
       }
     }
+  },
+  mounted() {
+    this.changeOption()
   }
 }
 </script>
