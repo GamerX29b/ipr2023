@@ -1,6 +1,5 @@
 package timer;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import database.dao.WeatherService;
 import dto.DataWeatherApi;
 import dto.WeatherDto;
 import dto.WeatherApiResponse;
@@ -23,8 +22,8 @@ import java.util.logging.Logger;
 @Stateless
 public class WeatherTimer {
 
-    @EJB
-    private WeatherService weatherService;
+//    @EJB
+//    private WeatherService weatherService;
 
     Logger log = Logger.getLogger(WeatherTimer.class.getName());
 
@@ -33,7 +32,7 @@ public class WeatherTimer {
         //WeatherDto weather = getActualTemperature();  //TODO сраная квота на фасад! Перед демонстрацией раскоментить.
         //You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan
         WeatherDto weather = getRandomTemperature();  //Рандомное число
-        weatherService.createNewTemperatureRecord(weather);
+        //weatherService.createNewTemperatureRecord(weather);
         log.warning("Таймер сработал" + new Date());
     }
 

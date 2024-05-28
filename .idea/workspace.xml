@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="alphaProject:war" />
+      <artifact name="alphaProject-ear:ear" />
       <artifact name="bettaProject:war" />
     </artifacts-to-build>
   </component>
@@ -11,10 +11,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Последние правки и полировка">
+      <change afterPath="$PROJECT_DIR$/alphaProject-ear/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject-ear/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject-ear/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject-ear/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject-ear/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/Starter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alphaProject/src/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr_2024/src/components/upperBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/components/upperBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/Central.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/Central.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/centralTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/Weather.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/database/dao/WeatherServiceBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/interceptor/LoggerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/interceptor/LoggerInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/timer/WeatherTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/timer/WeatherTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +45,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,49 +93,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "temurin-11",
-    "last_opened_file_path": "D:/Lab/ipr2023",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lab/ipr2023/alphaProject-ear&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2",
-      "sqlite",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;,
+      &quot;sqlite&quot;,
+      &quot;postgresql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JAVA"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lab\ipr2023\alphaProject-ear\src\main\webapp\WEB-INF" />
+      <recent name="D:\Lab\ipr2023\alphaProject-ear" />
       <recent name="D:\Lab\ipr2023\bettaProject\src\main\webapp\WEB-INF" />
       <recent name="D:\Lab\ipr2023\bettaProject\src\main\resources" />
       <recent name="D:\Lab\ipr2023\alphaProject\src\main\webapp\WEB-INF" />
-      <recent name="D:\Lab\ipr2023\alphaProject\src\main\java" />
-      <recent name="D:\Lab\ipr2023\bettaProject\src\main\java\database\dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Lab\ipr2023\bettaProject\src\main\resources" />
@@ -125,29 +145,29 @@
       <recent name="D:\Lab\ipr2023\alphaProject" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="dto" />
       <recent name="webService" />
+      <recent name="dto" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 23.0.0.Final">
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="JBoss/WildFly 23.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 23.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="temurin-11" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/alphaProject-1.0/temperature" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
-      <deployment>
-        <artifact name="bettaProject:war">
-          <settings />
-        </artifact>
-        <artifact name="alphaProject:war">
-          <settings />
-        </artifact>
-      </deployment>
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/alphaProject-1.0/temperature" />
+      <option name="COMMON_VM_ARGUMENTS" value=" -Djboss.socket.binding.port-offset=2" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
       <server-settings>
         <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
@@ -205,31 +225,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="alphaProject:war" />
-          <artifact name="bettaProject:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/ipr_2024/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/ipr_2024/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -243,20 +238,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.generated-requests | #1" />
-      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="HTTP Request.generated-requests | #7" />
+      <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="HTTP Request.generated-requests | #4" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 23.0.0.Final" />
-      <item itemvalue="npm.build" />
-      <item itemvalue="npm.lint" />
       <item itemvalue="npm.serve" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="npm.serve" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +301,12 @@
       <workItem from="1708079147410" duration="9491000" />
       <workItem from="1708150189212" duration="11175000" />
       <workItem from="1708236151726" duration="2820000" />
+      <workItem from="1715704573387" duration="635000" />
+      <workItem from="1716097014999" duration="254000" />
+      <workItem from="1716703894647" duration="1335000" />
+      <workItem from="1716826421947" duration="6170000" />
+      <workItem from="1716832704775" duration="520000" />
+      <workItem from="1716915060182" duration="2448000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
@@ -428,6 +429,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="12" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/alphaProject/src/main/java/webService/WebData.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

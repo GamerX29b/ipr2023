@@ -1,6 +1,5 @@
 package interceptor;
 
-import database.dao.WeatherServiceBean;
 import java.util.logging.Logger;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;

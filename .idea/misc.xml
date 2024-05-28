@@ -10,6 +10,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ipr2023WeatherLibrary/pom.xml" />
+        <option value="$PROJECT_DIR$/alphaProject-ear/pom.xml" />
       </list>
     </option>
   </component>

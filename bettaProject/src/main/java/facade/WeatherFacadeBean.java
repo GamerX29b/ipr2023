@@ -1,6 +1,5 @@
 package facade;
 
-import database.dao.WeatherService;
 import dto.WeatherDto;
 
 import interceptor.LoggerInterceptor;
@@ -18,8 +17,8 @@ public class WeatherFacadeBean implements WeatherFacade{
 
     Logger log = Logger.getLogger(WeatherFacadeBean.class.getName());
 
-    @EJB
-    WeatherService weatherService;
+//    @EJB
+//    WeatherService weatherService;
 
     @Override
     @Interceptors(LoggerInterceptor.class)
@@ -29,7 +28,7 @@ public class WeatherFacadeBean implements WeatherFacade{
         cal.set(Calendar.MINUTE, 0);
         cal.set(Calendar.SECOND, 0);
         cal.set(Calendar.MILLISECOND, 0);
-        return weatherService.findTemperatureByDate(cal.getTime());
+        return new WeatherDto();
     }
 
     @PreDestroy

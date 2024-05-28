@@ -7,9 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ipr2023WeatherLibrary" />
-        <module name="alphaProject" />
         <module name="bettaProject" />
+        <module name="alphaProject-ear" />
+        <module name="alphaProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alphaProject (1)" target="11" />
+      <module name="alphaProject (2)" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
