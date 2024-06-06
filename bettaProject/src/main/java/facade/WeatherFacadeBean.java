@@ -17,8 +17,6 @@ public class WeatherFacadeBean implements WeatherFacade{
 
     Logger log = Logger.getLogger(WeatherFacadeBean.class.getName());
 
-//    @EJB
-//    WeatherService weatherService;
 
     @Override
     @Interceptors(LoggerInterceptor.class)
@@ -28,7 +26,11 @@ public class WeatherFacadeBean implements WeatherFacade{
         cal.set(Calendar.MINUTE, 0);
         cal.set(Calendar.SECOND, 0);
         cal.set(Calendar.MILLISECOND, 0);
-        return new WeatherDto();
+        WeatherDto wd = new WeatherDto();
+        wd.setTimestamp(cal.getTime());
+        wd.setTemperature(30D);
+        wd.setHumidity(40D);
+        return wd;
     }
 
     @PreDestroy

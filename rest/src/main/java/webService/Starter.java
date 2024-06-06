@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 /**
  * Запуск. Где надо перечислить все ресурсы
  */
-@ApplicationPath("alpha")
+@ApplicationPath("/")
 public class Starter extends Application {
 
     Logger log = Logger.getLogger(WebData.class.getName());

@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>alphaProject-ear</artifactId>
+    <artifactId>rest-module</artifactId>
     <packaging>ear</packaging>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -19,24 +19,24 @@
     <version>1.0</version>
     <dependencies>
         <dependency>
-            <groupId>org.ipr.alphaProject</groupId>
-            <artifactId>alphaProject</artifactId>
+            <groupId>org.ipr</groupId>
+            <artifactId>rest</artifactId>
             <version>1.0</version>
             <type>war</type>
         </dependency>
     </dependencies>
     <build>
-        <finalName>alphaProject-ear</finalName>
+        <finalName>rest-module</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-ear-plugin</artifactId>
                 <configuration>
                     <modules>
                         <webModule>
-                            <groupId>org.ipr.alphaProject</groupId>
-                            <artifactId>alphaProject</artifactId>
-                            <contextRoot>/alphaProject</contextRoot>
-                            <bundleFileName>alphaProject-1.0.war</bundleFileName>
+                            <groupId>org.ipr</groupId>
+                            <artifactId>rest</artifactId>
+                            <contextRoot>/rest</contextRoot>
+                            <bundleFileName>rest.war</bundleFileName>
                         </webModule>
                     </modules>
                 </configuration>

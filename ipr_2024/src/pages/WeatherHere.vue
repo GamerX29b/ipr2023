@@ -28,14 +28,14 @@ export default {
   methods: {
     async tempInfo(){
       try{
-        const response = await axios.post('http://localhost:8080/alphaProject-1.0/temperature');
+        const response = await axios.get('http://localhost:8082/rest/webdata/temperature');
         this.temperature = response.data.temperature;
         this.humidity = response.data.humidity;
         this.date = response.data.timestamp;
         this.visible = true;
       } catch (e) {
         this.visible = false;
-        alert('ашипка');
+        alert('ашипка' + e);
       }
     }
   }

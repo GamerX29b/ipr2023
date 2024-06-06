@@ -1,5 +1,9 @@
 package webService;
 
+import com.google.gson.Gson;
+import facade.WeatherFacade;
+
+import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -10,11 +14,14 @@ import java.util.logging.Logger;
 @Path("webdata")
 public class WebData {
 
+    @EJB(lookup = "java:global/bettaProject-1.0/WeatherFacadeBean!facade.WeatherFacade")
+    WeatherFacade weatherFacade;
+
     Logger log = Logger.getLogger(WebData.class.getName());
 
     @GET
     @Path("/result/{data}")
-    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response result(@PathParam(value = "data") String data){
         String returnedData = "Пришёл текст" + data;
         log.info("req");
@@ -23,8 +30,17 @@ public class WebData {
 
     @GET
     @Path("/result2")
-    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response result2(@QueryParam(value = "data") String data){
         return Response.accepted(data).build();
+    }
+
+    @GET
+    @Path("/temperature")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response weather(){
+        Gson gson = new Gson();
+        String json = gson.toJson(weatherFacade.temperature());
+        return  Response.accepted(json).build();
     }
 }

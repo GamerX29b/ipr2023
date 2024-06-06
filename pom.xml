@@ -4,7 +4,7 @@
 
   <groupId>org.ipr</groupId>
   <artifactId>ipr2023</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>Ipr2023Project</name>
   <inceptionYear>2001</inceptionYear>
   <packaging>pom</packaging>
@@ -14,8 +14,8 @@
   </properties>
 
   <modules>
-    <module>alphaProject</module>
-    <module>alphaProject-ear</module>
+    <module>rest</module>
+    <module>rest-module</module>
     <module>bettaProject</module>
   </modules>
   <build>
