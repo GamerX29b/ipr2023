@@ -25,14 +25,24 @@ public class WebData {
     public Response result(@PathParam(value = "data") String data){
         String returnedData = "Пришёл текст" + data;
         log.info("req");
-        return Response.accepted(returnedData).build();
+        return Response.ok(returnedData).build();
+    }
+
+    @GET
+    @Path("/result/{one}/{two}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response resultOne(@PathParam(value = "one") String one,
+                              @PathParam(value = "two") String two){
+        String returnedData = "Пришёл текст " + one + " и " + two;
+        log.info("req");
+        return Response.ok(returnedData).build();
     }
 
     @GET
     @Path("/result2")
     @Produces(MediaType.APPLICATION_JSON)
     public Response result2(@QueryParam(value = "data") String data){
-        return Response.accepted(data).build();
+        return Response.ok(data).build();
     }
 
     @GET

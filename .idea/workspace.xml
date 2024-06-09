@@ -10,28 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Последние правки и полировка">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/webService/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/webService/CorsOptionsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject-ear/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/rest-module/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject-ear/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject-ear/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-module/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject-ear/src/main/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-module/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject-ear/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-module/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/dto/WeatherDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/dto/WeatherDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/facade/WeatherFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/facade/WeatherFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebData.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/java/webService/WebTemperature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/resources/META-INF/jboss-ejb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/resources/META-INF/jboss-ejb3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alphaProject/src/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/src/main/java/facade/WeatherFacadeBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherHere.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherHere.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,42 +73,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Lab/ipr2023/alphaProject-ear&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "temurin-11",
+    "last_opened_file_path": "D:/Lab/ipr2023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;,
-      &quot;sqlite&quot;,
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2",
+      "sqlite",
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Lab\ipr2023\alphaProject-ear\src\main\webapp\WEB-INF" />
@@ -148,6 +131,9 @@
   </component>
   <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 23.0.0.Final">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="JBoss/WildFly 23.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 23.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="temurin-11" nameIsGenerated="true">
@@ -237,12 +223,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 23.0.0.Final" />
       <item itemvalue="npm.serve" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="npm.serve" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
@@ -303,6 +291,7 @@
       <workItem from="1716999337293" duration="3737000" />
       <workItem from="1717253124339" duration="5573000" />
       <workItem from="1717686087284" duration="5374000" />
+      <workItem from="1717925434964" duration="12858000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
@@ -425,6 +414,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="12" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/webService/WebData.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

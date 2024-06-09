@@ -18,6 +18,10 @@ public class Starter extends Application {
         Set<Class<?>> classes = new HashSet<>();
         classes.add(WebData.class);
         log.info("Webdata started");
+        classes.add(CorsFilter.class);
+        log.info("CorsFilter started");
+        classes.add(CorsOptionsFilter.class);
+        log.info("CorsOptionsFilter started");
         return classes;
     }
 }
