@@ -6,8 +6,7 @@ import facade.WeatherFacade;
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.core.*;
 import java.util.logging.Logger;
 
 @RequestScoped
@@ -22,10 +21,17 @@ public class WebData {
     @GET
     @Path("/result/{data}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response result(@PathParam(value = "data") String data){
+    public Response result(@PathParam(value = "data") String data, @Context Request req){
         String returnedData = "Пришёл текст" + data;
-        log.info("req");
-        return Response.ok(returnedData).build();
+        CacheControl cacheControl = new CacheControl();
+        cacheControl.setMaxAge(86400);
+        EntityTag et = new EntityTag("111");
+        Response.ResponseBuilder rb = req.evaluatePreconditions(et);
+        if (rb != null) {
+            return rb.cacheControl(cacheControl).tag(et).build();
+        }
+        rb = Response.ok(returnedData).cacheControl(cacheControl).tag(et);
+        return rb.build();
     }
 
     @GET
@@ -48,9 +54,16 @@ public class WebData {
     @GET
     @Path("/temperature")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response weather(){
+    public Response weather(@Context Request req){
         Gson gson = new Gson();
-        String json = gson.toJson(weatherFacade.temperature());
-        return  Response.accepted(json).build();
+        CacheControl cacheControl = new CacheControl();
+        cacheControl.setMaxAge(86400);
+        EntityTag et = new EntityTag("111");
+        Response.ResponseBuilder rb = req.evaluatePreconditions(et);
+        if (rb != null) {
+            return rb.cacheControl(cacheControl).tag(et).build();
+        }
+        rb = Response.ok(gson.toJson(weatherFacade.temperature())).cacheControl(cacheControl).tag(et);
+        return rb.build();
     }
 }

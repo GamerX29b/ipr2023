@@ -16,7 +16,6 @@ public class CorsOptionsFilter implements ContainerRequestFilter {
 
     @Override
     public void filter( ContainerRequestContext requestCtx ) throws IOException {
-        log.info( "Options filter" );
         if ( requestCtx.getRequest().getMethod().equals( "OPTIONS" ) ) {
             log.info( "Is - options method" );
 
