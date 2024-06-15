@@ -11,10 +11,10 @@ import java.util.logging.Logger;
  */
 @ApplicationPath("/")
 public class Starter extends Application {
-
+    //Application чтобы не делать web.xml
     Logger log = Logger.getLogger(WebData.class.getName());
     @Override
-    public Set<Class<?>> getClasses() {
+    public Set<Class<?>> getClasses() { //Перечисляем необходимые классые.
         Set<Class<?>> classes = new HashSet<>();
         classes.add(WebData.class);
         log.info("Webdata started");
