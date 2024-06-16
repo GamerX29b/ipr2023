@@ -10,12 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Последние правки и полировка">
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/webService/AsyncResponseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/webService/SyncResponseWithTimeout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettaProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bettaProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/CorsOptionsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/CorsOptionsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +307,9 @@
       <workItem from="1718289563227" duration="8694000" />
       <workItem from="1718299934835" duration="313000" />
       <workItem from="1718300411437" duration="1193000" />
-      <workItem from="1718424510558" duration="10612000" />
+      <workItem from="1718424510558" duration="11190000" />
+      <workItem from="1718459028267" duration="2869000" />
+      <workItem from="1718530706755" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
