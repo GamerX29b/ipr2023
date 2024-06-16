@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="136a42d7-6b9d-4153-ae89-9865db907702" name="Changes" comment="Последние правки и полировка">
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/webService/AsyncResponseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/webService/SyncResponseWithTimeout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/dto/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/CorsOptionsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/CorsOptionsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ipr_2024/src/pages/WeatherOtherCity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/webService/WebData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +143,9 @@
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="JBoss/WildFly 23.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 23.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="temurin-11" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/alphaProject-1.0/temperature" />
@@ -231,6 +233,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.generated-requests | #5" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
@@ -239,10 +242,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #5" />
         <item itemvalue="npm.serve" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
       </list>
     </recent_temporary>
@@ -309,7 +312,8 @@
       <workItem from="1718300411437" duration="1193000" />
       <workItem from="1718424510558" duration="11190000" />
       <workItem from="1718459028267" duration="2869000" />
-      <workItem from="1718530706755" duration="305000" />
+      <workItem from="1718530706755" duration="363000" />
+      <workItem from="1718538544932" duration="3966000" />
     </task>
     <task id="LOCAL-00001" summary="Запушить">
       <created>1687709822331</created>
@@ -439,13 +443,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/webService/WebData.java</url>
-          <line>56</line>
+          <line>59</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/webService/WebData.java</url>
-          <line>44</line>
+          <line>47</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/webService/WebData.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

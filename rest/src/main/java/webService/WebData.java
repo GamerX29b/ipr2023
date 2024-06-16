@@ -1,12 +1,15 @@
 package webService;
 
 import com.google.gson.Gson;
+import dto.City;
 import facade.WeatherFacade;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 //Это класс ресурса. Классы ресурсов — это POJO, у которых есть хотя бы один метод,
@@ -80,5 +83,26 @@ public class WebData {
         }
         rb = Response.ok(gson.toJson(weatherFacade.temperature())).cacheControl(cacheControl).tag(et);
         return rb.build();
+    }
+
+    @GET
+    @Path("/citys")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response citys(){
+        Gson gson = new Gson();
+        List<City> cityList = new ArrayList<>();
+        City city = new City();
+        city.setName("Омск");
+        city.setValue("Omsk");
+        City city2 = new City();
+        city2.setName("Новосибирск");
+        city2.setValue("Novosibirsk");
+        City city3 = new City();
+        city3.setName("Кемерово");
+        city3.setValue("Kemerovo");
+        cityList.add(city);
+        cityList.add(city2);
+        cityList.add(city3);
+        return Response.ok(gson.toJson(cityList)).build();
     }
 }

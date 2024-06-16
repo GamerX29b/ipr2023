@@ -1,7 +1,6 @@
 <template>
  <div>
    <select v-model="changeCity" @change="changeOption" >
-    <option value="Omsk">Омск</option>
      <option v-for="city in citys" :key="city.value" :value="city.value">
        {{ city.name }}
      </option>
@@ -28,18 +27,9 @@ export default {
 
   data() {
     return {
-
-      citys:
-          [{
-            "value": "Krasnoyarsk",
-            "name": "Красноярск"
-          },
-            {
-              "value": "Novosibirsk",
-              "name": "Новосибирск"
-            }],
+      citys: [],
       changeCity: "Omsk",
-      temperatures: []
+      temperatures: [],
     }
   },
   name: "weatherOtherCity",
@@ -78,10 +68,24 @@ export default {
       } catch (error) {
         console.error(error);
       }
+    },
+    async changeCitys() {
+      const options = {
+        method: 'GET',
+        url: 'http://localhost:8082/rest/webdata/citys',
+      };
+
+      try {
+        const response = await axios.request(options);
+        console.log(response.data);
+        this.citys = response.data
+      } catch (error) {
+        console.error(error);
+      }
     }
   },
   mounted() {
-    this.changeOption()
+    this.changeCitys()
   }
 }
 </script>
