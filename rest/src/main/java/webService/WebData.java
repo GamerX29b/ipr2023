@@ -145,6 +145,7 @@ public class WebData {
     //http://localhost:8082/rest/webdata/deleteCity/Новосибирск
     @DELETE //просто удаление одного из городов из списка
     @Path("/deleteCity/{cityName}")
+    @LogResp //собственно, созданная аннотация-интерцептор. Именно таким способом я хотел сделать логгирование для реста в РК
     public Response deleteCity(@PathParam("cityName") String cityName) {
         List<City> cityList = cityListFromFile();
         cityList.removeIf(city -> city.getName().equals(cityName));
@@ -154,6 +155,7 @@ public class WebData {
 
     @GET
     @Path("/addCity") //http://localhost:8082/rest/webdata/addCity;cityName=Москва;cityValue=Moscow
+    @LogResp
     public Response addCity(@MatrixParam("cityName") String cityName,
                             @MatrixParam("cityValue") String cityValue){
         List<City> cityList = cityListFromFile();
@@ -192,6 +194,6 @@ public class WebData {
             throw new RuntimeException(e);
         }
     }
-    //@HttpMethod() //- метааннотация
-    //@NameBinding // - метааннотация для
+    //@HttpMethod() //- метааннотация которой помечены все стандартные аннотации типа Http можно создать свою
+    //Как применять - не понятно.
 }

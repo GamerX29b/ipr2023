@@ -32,6 +32,7 @@ public class Starter extends Application {
         log.info("CorsOptionsFilter started");
         classes.add(AsyncResponseController.class);
         log.info("AsyncResponse started");
+        classes.add(LogWriter.class);
         generateList();
         return classes;
     }
